@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+~$*.docx
+
+# Founders manifesto and brand guide: internal only, never published.
+# The logo master (Branding/Axomislabs - Logo.png) stays tracked — it's the
+# source tools/build-logo-assets.py regenerates every site asset from.
+Branding/*.docx
