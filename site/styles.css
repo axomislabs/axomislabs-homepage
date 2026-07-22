@@ -158,18 +158,20 @@ img, svg { max-width: 100%; height: auto; display: block; }
 
 /* ── Header ────────────────────────────────────────────────────────────── */
 
+/* The bar carries the same charcoal as the footer, in both themes, so the page
+   is bracketed by matching dark ends. Everything inside it therefore has to be
+   light regardless of theme — see the overrides below. */
 .site-head {
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid transparent;
-  transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
+  background: var(--charcoal);
+  transition: background 0.3s var(--ease);
 }
 .site-head.scrolled {
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  background: color-mix(in srgb, var(--charcoal) 94%, transparent);
   backdrop-filter: saturate(1.6) blur(12px);
   -webkit-backdrop-filter: saturate(1.6) blur(12px);
-  border-bottom-color: var(--rule);
 }
 
 .head-inner {
@@ -196,9 +198,10 @@ img, svg { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.brand-name em { font-style: normal; font-weight: 500; color: var(--accent); }
+.brand-name em { font-style: normal; font-weight: 500; color: #D9955F; }
+.brand-name { color: var(--ivory); }
 
-.site-head nav ul {
+.site-head nav > ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -209,7 +212,7 @@ img, svg { max-width: 100%; height: auto; display: block; }
 .site-head nav a {
   text-decoration: none;
   font-size: 0.9375rem;
-  color: var(--text-muted);
+  color: #A9A9A2;
   position: relative;
   padding-block: 0.25rem;
   transition: color 0.2s var(--ease);
@@ -218,32 +221,32 @@ img, svg { max-width: 100%; height: auto; display: block; }
   content: "";
   position: absolute; left: 0; bottom: 0;
   width: 100%; height: 1px;
-  background: var(--accent);
+  background: #D9955F;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.28s var(--ease);
 }
-.site-head nav a:hover { color: var(--text); }
+.site-head nav a:hover { color: var(--ivory); }
 .site-head nav a:hover::after { transform: scaleX(1); }
 
 .nav-cta {
-  color: var(--text) !important;
-  border: 1px solid var(--rule);
+  color: var(--ivory) !important;
+  border: 1px solid rgba(215, 207, 195, 0.32);
   border-radius: 999px;
   padding: 0.45rem 1.15rem !important;
   transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
 }
 .nav-cta::after { display: none; }
-.nav-cta:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.nav-cta:hover { border-color: #D9955F; background: rgba(217, 149, 95, 0.14); }
 
 .nav-toggle {
   display: none;
   background: none;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(215, 207, 195, 0.32);
   border-radius: 4px;
   padding: 0.55rem 0.6rem;
   cursor: pointer;
-  color: inherit;
+  color: var(--ivory);
 }
 .nav-toggle-bars { display: block; width: 18px; }
 .nav-toggle-bars i {
@@ -384,15 +387,14 @@ img, svg { max-width: 100%; height: auto; display: block; }
 .card h3 { margin-bottom: 0.75rem; }
 .card p { color: var(--text-muted); margin: 0; }
 
-/* ── Philosophy (inverted) ─────────────────────────────────────────────── */
+/* ── Philosophy ────────────────────────────────────────────────────────────
+   Previously inverted to charcoal. It was the only dark section besides the
+   footer, which made it read as disconnected from the rest of the page — so it
+   now sits on the quiet tone instead, and its contents use the normal tokens.
+   -------------------------------------------------------------------------- */
 
-.philosophy {
-  background: var(--charcoal);
-  color: var(--ivory);
-}
-.philosophy .eyebrow { color: #D9955F; }
-.philosophy .eyebrow::before { background: #D9955F; }
-.philosophy .closing { color: #A8A9A2; }
+.philosophy,
+.tint { background: var(--bg-sunk); }
 
 .pull {
   font-family: var(--font-head);
@@ -403,7 +405,7 @@ img, svg { max-width: 100%; height: auto; display: block; }
   margin: 0 0 clamp(3rem, 6vw, 4.25rem);
   text-wrap: balance;
 }
-.pull-accent { color: #D9955F; }
+.pull-accent { color: var(--accent-ink); }
 
 .steps {
   list-style: none;
@@ -430,12 +432,12 @@ img, svg { max-width: 100%; height: auto; display: block; }
   display: block;
   font-size: 0.75rem;
   letter-spacing: 0.16em;
-  color: #D9955F;
+  color: var(--accent-ink);
   margin-bottom: 0.7rem;
   padding-top: 1.1rem;
-  border-top: 1px solid rgba(215, 207, 195, 0.22);
+  border-top: 1px solid var(--rule);
 }
-.steps li p { margin: 0; color: #A8A9A2; font-size: 0.9688rem; }
+.steps li p { margin: 0; color: var(--text-muted); font-size: 0.9688rem; }
 
 /* ── Values ────────────────────────────────────────────────────────────── */
 
@@ -567,7 +569,7 @@ img, svg { max-width: 100%; height: auto; display: block; }
 @media (max-width: 46rem) {
   .nav-toggle { display: block; }
 
-  .site-head nav ul {
+  .site-head nav > ul {
     display: none;
     position: absolute;
     left: 0; right: 0; top: 100%;
@@ -575,18 +577,18 @@ img, svg { max-width: 100%; height: auto; display: block; }
     align-items: stretch;
     gap: 0;
     padding: 0.5rem clamp(1.25rem, 5vw, 2.5rem) 1.5rem;
-    background: var(--bg);
-    border-bottom: 1px solid var(--rule);
+    background: var(--charcoal);
+    border-bottom: 1px solid rgba(215, 207, 195, 0.18);
   }
-  .site-head nav ul.open { display: flex; }
-  .site-head nav ul li { border-top: 1px solid var(--rule); }
+  .site-head nav > ul.open { display: flex; }
+  .site-head nav > ul > li { border-top: 1px solid rgba(215, 207, 195, 0.18); }
   .site-head nav a { display: block; padding-block: 0.95rem; font-size: 1rem; }
   .site-head nav a::after { display: none; }
   .nav-cta {
     border: 0 !important;
     border-radius: 0 !important;
     padding: 0.95rem 0 !important;
-    color: var(--accent-ink) !important;
+    color: #D9955F !important;
   }
 
   .hero-mark { width: 88vw; top: 34%; right: -36%; opacity: 0.24; }
@@ -602,4 +604,182 @@ img, svg { max-width: 100%; height: auto; display: block; }
     transition-duration: 0.01ms !important;
   }
   .js .reveal { opacity: 1; transform: none; }
+}
+
+/* ── References page ───────────────────────────────────────────────────── */
+
+.ref-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: clamp(2rem, 4vw, 3rem) clamp(2rem, 4.5vw, 3.5rem);
+}
+.ref-list > li { border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+
+.ref-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.ref-head h3 { margin: 0; }
+
+.ref-list p { color: var(--text-muted); margin-bottom: 0.7rem; }
+.ref-list p:last-child { margin-bottom: 0; }
+
+.meta {
+  font-family: var(--font-head);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  margin-bottom: 0.7rem !important;
+}
+
+.status {
+  font-family: var(--font-head);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.status-beta {
+  color: var(--accent-ink);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.ref-link a {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.9063rem;
+  color: var(--accent-ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+.ref-link a:hover { border-bottom-color: transparent; }
+
+.note {
+  margin-top: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  max-width: 54ch;
+}
+
+/* ── Tiles (references page) ───────────────────────────────────────────── */
+
+.tiles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+  gap: clamp(1rem, 2vw, 1.4rem);
+}
+.tiles > li {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1.6rem 1.5rem;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+.tiles h3 { margin-bottom: 0.6rem; }
+.tiles p { color: var(--text-muted); font-size: 0.9375rem; margin-bottom: 0.7rem; }
+.tiles p:last-child { margin-bottom: 0; }
+.tiles .ref-link { margin-top: auto; padding-top: 0.7rem; }
+
+/* Quieter tile for things not yet started */
+.tile-soft { background: transparent; border-style: dashed; }
+
+/* Wider minimum, so a four-item set lands as 2x2 rather than 3 + an orphan. */
+.tiles-wide { grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); }
+
+/* Deliberately wider than a normal reading measure: this block is long, and at
+   62ch it pushed the tiles too far down the page. */
+.prose {
+  max-width: 78ch;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+.prose p { color: var(--text-muted); }
+.prose strong { color: var(--text); font-weight: 600; }
+
+/* ── Nav dropdowns ─────────────────────────────────────────────────────────
+   The same header markup ships on every page, so section links have to be
+   absolute-per-page (index.html#work) rather than bare fragments.
+   -------------------------------------------------------------------------- */
+
+.has-menu { position: relative; }
+
+.chev {
+  display: inline-block;
+  width: 0; height: 0;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent;
+  border-top: 4px solid currentColor;
+  opacity: 0.65;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: -0.75rem;
+  min-width: 12.5rem;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--charcoal);
+  border: 1px solid rgba(215, 207, 195, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.18s var(--ease), transform 0.18s var(--ease), visibility 0.18s;
+  z-index: 60;
+}
+/* focus-within keeps it reachable by keyboard, not just pointer */
+.has-menu:hover > .submenu,
+.has-menu:focus-within > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.5rem 0.7rem !important;
+  border-radius: 5px;
+  font-size: 0.875rem;
+}
+.submenu a::after { display: none; }
+.submenu a:hover { background: rgba(215, 207, 195, 0.1); color: var(--ivory); }
+
+@media (max-width: 46rem) {
+  /* No hover on touch — submenus sit open, indented under their parent. */
+  .submenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 0.7rem 1rem;
+    min-width: 0;
+  }
+  .submenu a { padding: 0.5rem 0 !important; font-size: 0.9375rem; }
+  .submenu a:hover { background: transparent; }
+  .chev { display: none; }
 }

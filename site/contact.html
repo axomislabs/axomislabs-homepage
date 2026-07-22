@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Axomis Labs</title>
+<meta name="description" content="Get in touch with Axomis Labs — thoughtful digital products, systems and consulting.">
+<meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#2E3133" media="(prefers-color-scheme: dark)">
+
+<link rel="canonical" href="https://axomislabs.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Axomis Labs">
+<meta property="og:title" content="Contact — Axomis Labs">
+<meta property="og:description" content="Let's talk about the challenge before we talk about the solution.">
+<meta property="og:url" content="https://axomislabs.com/contact.html">
+<meta property="og:image" content="https://axomislabs.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+
+<link rel="preload" href="assets/fonts/manrope-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className = "js";</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html" aria-label="Axomis Labs — home">
+      <img src="assets/logo-mark-light.svg" alt="" width="489" height="392" decoding="async">
+      <span class="brand-name">Axomis<em>Labs</em></span>
+    </a>
+
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul id="nav-list">
+        <li class="has-menu">
+          <a href="index.html">Home <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="index.html#work">What we do</a></li>
+            <li><a href="index.html#philosophy">Philosophy</a></li>
+            <li><a href="index.html#values">Values</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a href="references.html">References <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="references.html#experience">Experience</a></li>
+            <li><a href="references.html#products">Products</a></li>
+            <li><a href="references.html#consulting">Consulting</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Contact ──────────────────────────────────────────────
+       Deliberately minimal for now — room to grow later. -->
+  <section class="band" id="contact">
+    <div class="wrap narrow">
+      <p class="eyebrow reveal">Contact</p>
+      <h1 class="reveal">Let's talk about the challenge before we talk about the solution.</h1>
+      <p class="lead reveal">
+        Whether you're building something new, untangling something existing, or simply
+        thinking out loud — we'd like to hear about it.
+      </p>
+      <p class="reveal">
+        <a class="mail" href="mailto:info@axomislabs.com">info@axomislabs.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="assets/logo-full-light.svg" alt="Axomis Labs — Thoughtful Solutions"
+           width="1242" height="686" loading="lazy" decoding="async">
+    </div>
+    <div class="foot-meta">
+      <p>&copy; <span id="year">2026</span> Axomis Labs. All rights reserved.</p>
+      <p class="foot-tag">Thoughtful Solutions.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  var toggle = document.querySelector(".nav-toggle");
+  var list = document.getElementById("nav-list");
+  toggle.addEventListener("click", function () {
+    var open = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!open));
+    list.classList.toggle("open", !open);
+  });
+  list.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") {
+      toggle.setAttribute("aria-expanded", "false");
+      list.classList.remove("open");
+    }
+  });
+
+  var head = document.querySelector(".site-head");
+  var onScroll = function () { head.classList.toggle("scrolled", window.scrollY > 24); };
+  addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("shown"); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("shown");
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0 });
+  document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+  setTimeout(function () {
+    document.querySelectorAll(".reveal:not(.shown)").forEach(function (el) {
+      if (el.getBoundingClientRect().top < innerHeight) { el.classList.add("shown"); }
+    });
+  }, 1200);
+})();
+</script>
+</body>
+</html>

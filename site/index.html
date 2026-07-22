@@ -36,11 +36,8 @@
 
 <header class="site-head">
   <div class="wrap head-inner">
-    <a class="brand" href="#top" aria-label="Axomis Labs — home">
-      <picture>
-        <source srcset="assets/logo-mark-light.svg" media="(prefers-color-scheme: dark)">
-        <img src="assets/logo-mark.svg" alt="" width="489" height="392" decoding="async">
-      </picture>
+    <a class="brand" href="index.html" aria-label="Axomis Labs — home">
+      <img src="assets/logo-mark-light.svg" alt="" width="489" height="392" decoding="async">
       <span class="brand-name">Axomis<em>Labs</em></span>
     </a>
 
@@ -50,10 +47,23 @@
         <span class="sr-only">Menu</span>
       </button>
       <ul id="nav-list">
-        <li><a href="#work">What we do</a></li>
-        <li><a href="#philosophy">Philosophy</a></li>
-        <li><a href="#values">Values</a></li>
-        <li><a class="nav-cta" href="#contact">Contact</a></li>
+        <li class="has-menu">
+          <a href="index.html">Home <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="index.html#work">What we do</a></li>
+            <li><a href="index.html#philosophy">Philosophy</a></li>
+            <li><a href="index.html#values">Values</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a href="references.html">References <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="references.html#experience">Experience</a></li>
+            <li><a href="references.html#products">Products</a></li>
+            <li><a href="references.html#consulting">Consulting</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -62,7 +72,7 @@
 <main id="main">
 
   <!-- ── Hero ─────────────────────────────────────────────── -->
-  <section class="hero" id="top">
+  <section class="hero tint" id="top">
     <svg class="hero-mark" viewBox="0 0 200 160" aria-hidden="true" focusable="false">
       <path d="M12 152 L100 8 L188 152" fill="none" stroke="currentColor" stroke-width="9"
             stroke-linejoin="round" stroke-linecap="round"/>
@@ -82,30 +92,8 @@
     </div>
   </section>
 
-  <!-- ── Belief ───────────────────────────────────────────── -->
-  <section class="band belief">
-    <div class="wrap narrow">
-      <p class="statement reveal">
-        Technology should serve people — <br class="brk">not the other way around.
-      </p>
-      <div class="two-col reveal">
-        <p>
-          In a world driven by rapid innovation and constant digital transformation, it is easy to
-          confuse progress with purpose. New technologies emerge every day, yet many products become
-          more complicated, less intuitive, and further removed from the people they are meant to help.
-        </p>
-        <p>
-          Axomis Labs exists to challenge that trend. We don't build technology for its own sake.
-          We design systems, applications, and digital experiences that make complexity
-          understandable, meaningful, and useful. Thoughtful design isn't a luxury — it's a
-          responsibility.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- ── What we do ───────────────────────────────────────── -->
-  <section class="band" id="work">
+  <section class="band belief" id="work">
     <div class="wrap">
       <div class="band-head reveal">
         <p class="eyebrow">What we do</p>
@@ -198,28 +186,11 @@
     </div>
   </section>
 
-  <!-- ── Commitment ───────────────────────────────────────── -->
-  <section class="band commitment">
-    <div class="wrap narrow">
-      <p class="eyebrow reveal">Our commitment</p>
-      <h2 class="reveal">Every product we build answers three questions.</h2>
-      <ol class="questions reveal">
-        <li>Is it useful?</li>
-        <li>Is it understandable?</li>
-        <li>Does it improve the experience of the people using it?</li>
-      </ol>
-      <p class="closing reveal">
-        If the answer is no, we keep refining. Quality is never accidental —
-        thoughtfulness is intentional.
-      </p>
-    </div>
-  </section>
-
   <!-- ── Contact ──────────────────────────────────────────── -->
-  <section class="band contact" id="contact">
+  <section class="band contact commitment" id="contact">
     <div class="wrap narrow">
       <p class="eyebrow reveal">Contact</p>
-      <h2 class="reveal">Let's talk about the problem before we talk about the solution.</h2>
+      <h2 class="reveal">Let's talk about the challenge before we talk about the solution.</h2>
       <p class="lead reveal">
         Whether you're building something new, untangling something existing, or simply
         thinking out loud — we'd like to hear about it.
