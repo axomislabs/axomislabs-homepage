@@ -9,14 +9,17 @@
 <meta name="theme-color" content="#2E3133" media="(prefers-color-scheme: dark)">
 
 <link rel="canonical" href="https://axomislabs.com/">
+<link rel="alternate" hreflang="en" href="https://axomislabs.com/">
+<link rel="alternate" hreflang="de" href="https://axomislabs.com/de/">
+<link rel="alternate" hreflang="es" href="https://axomislabs.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://axomislabs.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Axomis Labs">
 <meta property="og:title" content="Axomis Labs — Thoughtful Solutions">
 <meta property="og:description" content="Digital products, systems, and experiences that turn complexity into clarity.">
 <meta property="og:url" content="https://axomislabs.com/">
 <meta property="og:image" content="https://axomislabs.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -64,6 +67,14 @@
           </ul>
         </li>
         <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        <li class="has-menu lang-menu">
+          <a href="index.html" aria-label="Language">EN <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="index.html" hreflang="en" lang="en" aria-current="true">English</a></li>
+            <li><a href="de/index.html" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="es/index.html" hreflang="es" lang="es">Español</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
@@ -82,8 +93,7 @@
       <p class="eyebrow reveal">Thoughtful Solutions</p>
       <h1 class="reveal">We turn complexity <br class="brk">into clarity.</h1>
       <p class="lead reveal">
-        Axomis Labs designs and engineers digital products, systems, and experiences —
-        built with care for the people who will actually use them.
+        Axomis Labs designs and engineers digital products, systems, and experiences — built with care for the people who will actually use them.
       </p>
       <p class="hero-cta reveal">
         <a class="button" href="#contact">Start a conversation</a>
@@ -99,9 +109,7 @@
         <p class="eyebrow">What we do</p>
         <h2>Four disciplines, one way of thinking.</h2>
         <p class="band-intro">
-          We don't define ourselves by a particular technology. Our work is defined by the quality
-          of the thinking behind it — which is why we move comfortably between products, platforms,
-          and consulting engagements.
+          We don't define ourselves by a particular technology. Our work is defined by the quality of the thinking behind it — which is why we move comfortably between products, platforms, and consulting engagements.
         </p>
       </div>
 
@@ -110,34 +118,28 @@
           <span class="card-num">01</span>
           <h3>Software Engineering</h3>
           <p>
-            We architect and build systems that hold up over time — enterprise platforms, consumer
-            applications, and the infrastructure beneath them. Engineering discipline, applied where
-            it matters.
+            We architect and build systems that hold up over time — enterprise platforms, consumer applications, and the infrastructure beneath them. Engineering discipline, applied where it matters.
           </p>
         </li>
         <li class="card reveal">
           <span class="card-num">02</span>
           <h3>Digital Product Design</h3>
           <p>
-            Interfaces and experiences shaped around real behaviour, so that using them feels
-            natural rather than learned. Every interface shapes an experience; every decision
-            influences trust.
+            Interfaces and experiences shaped around real behaviour, so that using them feels natural rather than learned. Every interface shapes an experience; every decision influences trust.
           </p>
         </li>
         <li class="card reveal">
           <span class="card-num">03</span>
           <h3>Consulting</h3>
           <p>
-            Clear thinking for organisations navigating change — including regulated industries,
-            where the margin for error is small and the cost of ambiguity is high.
+            Clear thinking for organisations navigating change — including regulated industries, where the margin for error is small and the cost of ambiguity is high.
           </p>
         </li>
         <li class="card reveal">
           <span class="card-num">04</span>
           <h3>Process &amp; Systems</h3>
           <p>
-            We examine how work actually happens, then remove the friction nobody budgeted for.
-            Processes should feel natural; complexity should become clarity.
+            We examine how work actually happens, then remove the friction nobody budgeted for. Processes should feel natural; complexity should become clarity.
           </p>
         </li>
       </ol>
@@ -160,9 +162,7 @@
       </ol>
 
       <p class="closing reveal">
-        Rather than chasing trends, we pursue solutions that remain valuable long after the newest
-        technology has changed. The industries may change. The technologies will evolve.
-        Our principles remain.
+        Rather than chasing trends, we pursue solutions that remain valuable long after the newest technology has changed. The industries may change. The technologies will evolve. Our principles remain.
       </p>
     </div>
   </section>
@@ -192,14 +192,14 @@
       <p class="eyebrow reveal">Contact</p>
       <h2 class="reveal">Let's talk about the challenge before we talk about the solution.</h2>
       <p class="lead reveal">
-        Whether you're building something new, untangling something existing, or simply
-        thinking out loud — we'd like to hear about it.
+        Whether you're building something new, untangling something existing, or simply thinking out loud — we'd like to hear about it.
       </p>
       <p class="reveal">
         <a class="mail" href="mailto:info@axomislabs.com">info@axomislabs.com</a>
       </p>
     </div>
   </section>
+
 
 </main>
 
@@ -216,53 +216,6 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  // Mobile navigation
-  var toggle = document.querySelector(".nav-toggle");
-  var list = document.getElementById("nav-list");
-  toggle.addEventListener("click", function () {
-    var open = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!open));
-    list.classList.toggle("open", !open);
-  });
-  list.addEventListener("click", function (e) {
-    if (e.target.tagName === "A") {
-      toggle.setAttribute("aria-expanded", "false");
-      list.classList.remove("open");
-    }
-  });
-
-  // Condense the header once the hero has scrolled past.
-  var head = document.querySelector(".site-head");
-  var onScroll = function () { head.classList.toggle("scrolled", window.scrollY > 24); };
-  addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  // Reveal on scroll — skipped entirely when the user prefers reduced motion.
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
-    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("shown"); });
-    return;
-  }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("shown");
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0 });
-  document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
-
-  // Failsafe: nothing stays invisible because an observer callback was missed.
-  setTimeout(function () {
-    document.querySelectorAll(".reveal:not(.shown)").forEach(function (el) {
-      if (el.getBoundingClientRect().top < innerHeight) { el.classList.add("shown"); }
-    });
-  }, 1200);
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>

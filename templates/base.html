@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="{{lang}}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#2E3133" media="(prefers-color-scheme: dark)">
+
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Axomis Labs">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="https://axomislabs.com/assets/og-image.png">
+<meta property="og:locale" content="{{og_locale}}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="{{root}}assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{root}}assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="{{root}}assets/favicon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="{{root}}assets/favicon-180.png">
+
+<link rel="preload" href="{{root}}assets/fonts/manrope-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{root}}assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{root}}assets/fonts.css">
+<link rel="stylesheet" href="{{root}}styles.css">
+<script>document.documentElement.className = "js";</script>
+</head>
+<body>
+
+<a class="skip" href="#main">{{ui_skip}}</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="{{base}}index.html" aria-label="{{ui_home_aria}}">
+      <img src="{{root}}assets/logo-mark-light.svg" alt="" width="489" height="392" decoding="async">
+      <span class="brand-name">Axomis<em>Labs</em></span>
+    </a>
+
+    <nav aria-label="{{ui_primary_nav}}">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i></span>
+        <span class="sr-only">{{ui_menu}}</span>
+      </button>
+      <ul id="nav-list">
+        <li class="has-menu">
+          <a href="{{base}}index.html">{{nav_home}} <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="{{base}}index.html#work">{{nav_what_we_do}}</a></li>
+            <li><a href="{{base}}index.html#philosophy">{{nav_philosophy}}</a></li>
+            <li><a href="{{base}}index.html#values">{{nav_values}}</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a href="{{base}}references.html">{{nav_references}} <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="{{base}}references.html#experience">{{nav_experience}}</a></li>
+            <li><a href="{{base}}references.html#products">{{nav_products}}</a></li>
+            <li><a href="{{base}}references.html#consulting">{{nav_consulting}}</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-cta" href="{{base}}contact.html">{{nav_contact}}</a></li>
+        <li class="has-menu lang-menu">
+          <a href="{{self_href}}" aria-label="{{ui_language_aria}}">{{lang_code}} <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+{{lang_links}}
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{main}}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="{{root}}assets/logo-full-light.svg" alt="{{ui_logo_alt}}"
+           width="1242" height="686" loading="lazy" decoding="async">
+    </div>
+    <div class="foot-meta">
+      <p>&copy; <span id="year">2026</span> Axomis Labs. {{ui_rights}}</p>
+      <p class="foot-tag">{{ui_tagline}}</p>
+    </div>
+  </div>
+</footer>
+
+<script src="{{root}}site.js"></script>
+</body>
+</html>

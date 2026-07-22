@@ -1,32 +1,46 @@
 # Axomis Labs — Homepage
 
-Static one-page site for Axomis Labs at **axomislabs.com**. No build step, no
-dependencies, no third-party requests at runtime — plain HTML and CSS, deployed to
-GitHub Pages.
+Static site for Axomis Labs at **axomislabs.com** — three pages in English, German
+and Spanish. Plain HTML and CSS with no runtime dependencies and no third-party
+requests, deployed to GitHub Pages.
+
+The HTML is generated from `content/` + `templates/` by a small stdlib-only Python
+script, and the output is committed. The deploy workflow just uploads `./site`, so
+nothing has to run in CI.
 
 ```
-site/                    ← everything here is published
-  index.html
-  styles.css
-  CNAME                    custom domain, read by GitHub Pages at deploy time
-  robots.txt
-  sitemap.xml
-  assets/
-    logo-full.svg          full lockup (traced vector)
-    logo-full-light.svg    light variant for dark backgrounds
-    logo-mark.svg          A/X mark only
-    logo-mark-light.svg    light variant of the mark
-    favicon.svg            inverts itself on dark browser chrome
-    favicon-32/180/512.png raster fallback for older Safari/iOS
-    og-image.png           1200×630 social share card (must stay raster)
-    logo-*.png             raster masters, kept for non-web use
-    fonts.css              @font-face declarations
-    fonts/                 Inter + Manrope, latin subsets (OFL 1.1)
+content/                 ← edit copy HERE, not in site/
+  en.json  de.json  es.json
+templates/               page shells with {{placeholders}}
 tools/
-  build-logo-assets.py   regenerates every asset above from the master image
+  build-pages.py         content + templates -> site/*.html
+  build-logo-assets.py   regenerates every image asset
+site/                    ← generated; everything here is published
+  index.html  references.html  contact.html      (English, at the root)
+  de/…  es/…                                     (German, Spanish)
+  styles.css  site.js  robots.txt  sitemap.xml
+  CNAME                  custom domain, read by GitHub Pages at deploy time
+  assets/                logos, favicons, OG card, self-hosted fonts
 Branding/                ← source material, deliberately NOT published
 .github/workflows/deploy.yml
 ```
+
+## Editing content
+
+The nine HTML pages under `site/` are **generated — do not edit them by hand.**
+Copy lives in `content/*.json`; change it there and rebuild:
+
+```bash
+python3 tools/build-pages.py
+```
+
+The build fails loudly rather than silently emptying a page: an unresolved
+`{{placeholder}}` aborts with the page and key named. All three language files
+must define the same keys — a missing one surfaces as an unresolved placeholder.
+
+English is published at the site root so existing URLs keep working; other
+languages go in a subfolder. The generator also writes `sitemap.xml`, the
+`hreflang` alternates, and the language switcher links.
 
 ## Local preview
 

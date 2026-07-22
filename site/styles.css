@@ -783,3 +783,26 @@ img, svg { max-width: 100%; height: auto; display: block; }
   .submenu a:hover { background: transparent; }
   .chev { display: none; }
 }
+
+/* ── Language switcher ─────────────────────────────────────────────────────
+   Last item in the bar, so its panel is right-aligned to stay on screen.
+   -------------------------------------------------------------------------- */
+
+.lang-menu > a {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.8125rem;
+}
+.lang-menu .submenu {
+  left: auto;
+  right: -0.75rem;
+  min-width: 9.5rem;
+}
+.lang-menu .submenu a[aria-current="true"] {
+  color: var(--ivory);
+  background: rgba(215, 207, 195, 0.08);
+}
+
+@media (max-width: 46rem) {
+  .lang-menu .submenu { right: auto; }
+}

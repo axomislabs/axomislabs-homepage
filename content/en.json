@@ -1,0 +1,166 @@
+{
+  "lang": "en",
+  "label": "English",
+  "code": "EN",
+
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "primary_nav": "Primary",
+    "home_aria": "Axomis Labs — home",
+    "language_aria": "Language",
+    "logo_alt": "Axomis Labs — Thoughtful Solutions",
+    "rights": "All rights reserved.",
+    "tagline": "Thoughtful Solutions."
+  },
+
+  "nav": {
+    "home": "Home",
+    "references": "References",
+    "contact": "Contact",
+    "what_we_do": "What we do",
+    "philosophy": "Philosophy",
+    "values": "Values",
+    "experience": "Experience",
+    "products": "Products",
+    "consulting": "Consulting"
+  },
+
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's talk about the challenge before we talk about the solution.",
+    "lead": "Whether you're building something new, untangling something existing, or simply thinking out loud — we'd like to hear about it.",
+    "email": "info@axomislabs.com"
+  },
+
+  "index": {
+    "title": "Axomis Labs — Thoughtful Solutions",
+    "description": "Axomis Labs designs and engineers digital products, systems, and experiences that turn complexity into clarity — with people at the centre of every solution.",
+    "og_title": "Axomis Labs — Thoughtful Solutions",
+    "og_description": "Digital products, systems, and experiences that turn complexity into clarity.",
+
+    "hero_eyebrow": "Thoughtful Solutions",
+    "hero_h1": "We turn complexity <br class=\"brk\">into clarity.",
+    "hero_lead": "Axomis Labs designs and engineers digital products, systems, and experiences — built with care for the people who will actually use them.",
+    "hero_cta_primary": "Start a conversation",
+    "hero_cta_secondary": "See what we do",
+
+    "work_eyebrow": "What we do",
+    "work_h2": "Four disciplines, one way of thinking.",
+    "work_intro": "We don't define ourselves by a particular technology. Our work is defined by the quality of the thinking behind it — which is why we move comfortably between products, platforms, and consulting engagements.",
+    "work_cards": [
+      {
+        "title": "Software Engineering",
+        "body": "We architect and build systems that hold up over time — enterprise platforms, consumer applications, and the infrastructure beneath them. Engineering discipline, applied where it matters."
+      },
+      {
+        "title": "Digital Product Design",
+        "body": "Interfaces and experiences shaped around real behaviour, so that using them feels natural rather than learned. Every interface shapes an experience; every decision influences trust."
+      },
+      {
+        "title": "Consulting",
+        "body": "Clear thinking for organisations navigating change — including regulated industries, where the margin for error is small and the cost of ambiguity is high."
+      },
+      {
+        "title": "Process &amp; Systems",
+        "body": "We examine how work actually happens, then remove the friction nobody budgeted for. Processes should feel natural; complexity should become clarity."
+      }
+    ],
+
+    "philosophy_eyebrow": "Our philosophy",
+    "philosophy_pull": "The best solutions rarely begin with code.<br class=\"brk\">\n        <span class=\"pull-accent\">They begin with listening.</span>",
+    "philosophy_steps": [
+      { "title": "Listen", "body": "Before proposing anything, we understand the problem as the people living with it experience it." },
+      { "title": "Understand", "body": "We map the system around the problem — technical, organisational, and human." },
+      { "title": "Ask better questions", "body": "Only then do we choose the technologies, architectures, and tools that genuinely solve it." }
+    ],
+    "philosophy_closing": "Rather than chasing trends, we pursue solutions that remain valuable long after the newest technology has changed. The industries may change. The technologies will evolve. Our principles remain.",
+
+    "values_eyebrow": "Our values",
+    "values_h2": "What we hold to.",
+    "values": [
+      { "title": "Thoughtfulness", "body": "Every decision deserves consideration. Good technology begins with understanding people." },
+      { "title": "Clarity", "body": "We reduce complexity. We create systems that people can trust and understand." },
+      { "title": "Craftsmanship", "body": "We value quality over speed. Details matter, because details shape experiences." },
+      { "title": "Curiosity", "body": "We continue learning. Innovation begins with asking better questions." },
+      { "title": "Integrity", "body": "We act transparently and responsibly. Trust is earned through consistency." },
+      { "title": "Human Experience", "body": "Technology should support people, not overwhelm them. Every interaction can make life simpler." }
+    ]
+  },
+
+  "references": {
+    "title": "References — Axomis Labs",
+    "description": "Selected work from Axomis Labs — experience, our own products, and consulting engagements.",
+    "og_title": "References — Axomis Labs",
+    "og_description": "Experience, our own products, and consulting engagements.",
+
+    "experience_eyebrow": "Experience",
+    "experience_h1": "Where the thinking comes from.",
+    "experience_prose": [
+      "Behind Axomis Labs sits more than a decade of <strong>system and database architecture, implementation and project management in the pharmaceutical industry</strong> — an environment where a system isn't considered working until it has been proven to work, and where every change carries documentation and accountability.",
+      "Alongside that, years of <strong>computerised systems validation</strong>: making systems run seamlessly while satisfying every compliance constraint around them. It teaches a particular habit — designing for evidence, not only for function.",
+      "Less obviously, <strong>twenty-five years of sport</strong> across very different disciplines — combat sports, ball sports, volleyball, dance, diving. What carries into the work isn't the sport but the habit behind it: focus, discipline, and knowing what it takes to get good at something unfamiliar. It is also why the industry isn't the point — what transfers is the discipline, not the domain."
+    ],
+    "experience_tiles": [
+      { "title": "Regulated systems", "body": "10+ years of architecture, implementation and project management in pharma, where correctness is a requirement rather than an aspiration." },
+      { "title": "Validation &amp; compliance", "body": "Computerised systems validation — building systems that run seamlessly and can still be evidenced against the rules that govern them." },
+      { "title": "Focus &amp; discipline", "body": "Twenty-five years of sport across unrelated disciplines. What transfers is the focus, and the discipline to stay with something until it is genuinely good." }
+    ],
+    "experience_note": "The approach isn't tied to one sector. It transfers wherever systems have to be made to work and stand up to scrutiny — pharmaceutical and other regulated environments included.",
+
+    "products_eyebrow": "Products",
+    "products_h2": "Software we build and run ourselves.",
+    "products_intro": "Carrying our own products through design, release and support.",
+    "products": [
+      {
+        "title": "TournaQ Volley",
+        "status": "In beta",
+        "status_class": "status status-beta",
+        "body": "A games and tournament management platform, built to support the processes that happen on the field. Designed to bring people together, and to let organisers and players run events smoothly — without the friction that usually comes with them.",
+        "link": "https://tournaq.com",
+        "link_label": "tournaq.com"
+      },
+      {
+        "title": "Document capture &amp; filing",
+        "status": "In development",
+        "status_class": "status",
+        "meta": "Working title — name to be announced",
+        "body": "Reads documents, extracts the data that matters, and files them automatically into a structured hierarchy that can be analysed later. Integrates with Google Drive and conforms with GDPR, so you can focus on the filing process rather than on where the data ends up."
+      },
+      {
+        "title": "Workout planning",
+        "status": "In development",
+        "status_class": "status",
+        "meta": "Working title — name to be announced",
+        "body": "Use AI to build the plan, then restructure it around your own experience until it's genuinely yours — the kind of structure that takes an athlete to professional level."
+      },
+      {
+        "title": "More in the pipeline",
+        "status": "In planning",
+        "status_class": "status",
+        "soft": true,
+        "body": "Further applications and systems are in consideration, shaped by ongoing conversations with clients."
+      }
+    ],
+
+    "consulting_eyebrow": "Consulting",
+    "consulting_h2": "Work that starts before the software does.",
+    "consulting_intro": "From a single application to a company-wide step up in digitalisation — scoped to whatever the business actually needs next.",
+    "consulting_tiles": [
+      { "title": "Project &amp; organisation management", "body": "Structuring work so it can be planned, delegated and finished — with decisions prepared, documented and open to review later." },
+      { "title": "Data &amp; process management", "body": "Getting data into one dependable place and the processes around it into a shape that holds, from industrial operations through to sports applications." },
+      { "title": "Product management", "body": "Deciding what to build, in what order, and what to leave out — then staying with it through delivery rather than handing over a specification." },
+      { "title": "Implementation", "body": "Taking a system from requirements engineering through testing to the production handshake, and staying with it until it runs. Shaped by regulated work, where nothing goes live without the evidence to support it." },
+      { "title": "Software selection", "body": "Comparing what's on the market against what you need, so you buy the right thing — or find out early that building is the better answer." },
+      { "title": "Digital transformation", "body": "For smaller companies wanting to move faster: starting with a single application and going as far as reworking revenue streams through digitalisation and optimisation." }
+    ],
+    "consulting_note": "Engagements are shaped to fit — a defined project, ongoing support, or a bespoke arrangement where that suits both sides better."
+  },
+
+  "contact_page": {
+    "title": "Contact — Axomis Labs",
+    "description": "Get in touch with Axomis Labs — thoughtful digital products, systems and consulting.",
+    "og_title": "Contact — Axomis Labs",
+    "og_description": "Let's talk about the challenge before we talk about the solution."
+  }
+}

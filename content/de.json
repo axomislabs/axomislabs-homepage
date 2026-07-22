@@ -1,0 +1,166 @@
+{
+  "lang": "de",
+  "label": "Deutsch",
+  "code": "DE",
+
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü",
+    "primary_nav": "Hauptnavigation",
+    "home_aria": "Axomis Labs — Startseite",
+    "language_aria": "Sprache",
+    "logo_alt": "Axomis Labs — Thoughtful Solutions",
+    "rights": "Alle Rechte vorbehalten.",
+    "tagline": "Thoughtful Solutions."
+  },
+
+  "nav": {
+    "home": "Start",
+    "references": "Referenzen",
+    "contact": "Kontakt",
+    "what_we_do": "Was wir tun",
+    "philosophy": "Philosophie",
+    "values": "Werte",
+    "experience": "Erfahrung",
+    "products": "Produkte",
+    "consulting": "Beratung"
+  },
+
+  "contact": {
+    "eyebrow": "Kontakt",
+    "heading": "Sprechen wir über die Aufgabe, bevor wir über die Lösung sprechen.",
+    "lead": "Ob Sie etwas Neues aufbauen, etwas Bestehendes entwirren oder einfach laut nachdenken möchten — wir hören gerne zu.",
+    "email": "info@axomislabs.com"
+  },
+
+  "index": {
+    "title": "Axomis Labs — Thoughtful Solutions",
+    "description": "Axomis Labs entwirft und entwickelt digitale Produkte, Systeme und Erlebnisse, die Komplexität in Klarheit verwandeln — mit dem Menschen im Mittelpunkt jeder Lösung.",
+    "og_title": "Axomis Labs — Thoughtful Solutions",
+    "og_description": "Digitale Produkte, Systeme und Erlebnisse, die Komplexität in Klarheit verwandeln.",
+
+    "hero_eyebrow": "Thoughtful Solutions",
+    "hero_h1": "Wir verwandeln Komplexität <br class=\"brk\">in Klarheit.",
+    "hero_lead": "Axomis Labs entwirft und entwickelt digitale Produkte, Systeme und Erlebnisse — mit Sorgfalt für die Menschen gebaut, die sie am Ende tatsächlich nutzen.",
+    "hero_cta_primary": "Gespräch beginnen",
+    "hero_cta_secondary": "Was wir tun",
+
+    "work_eyebrow": "Was wir tun",
+    "work_h2": "Vier Disziplinen, eine Denkweise.",
+    "work_intro": "Wir definieren uns nicht über eine bestimmte Technologie. Unsere Arbeit definiert sich über die Qualität des Denkens dahinter — deshalb bewegen wir uns mühelos zwischen Produkten, Plattformen und Beratungsmandaten.",
+    "work_cards": [
+      {
+        "title": "Softwareentwicklung",
+        "body": "Wir konzipieren und bauen Systeme, die auf Dauer tragen — Unternehmensplattformen, Endkundenanwendungen und die Infrastruktur darunter. Ingenieursdisziplin, dort angewandt, wo sie zählt."
+      },
+      {
+        "title": "Digitales Produktdesign",
+        "body": "Oberflächen und Erlebnisse, die sich am tatsächlichen Verhalten orientieren, sodass ihre Nutzung selbstverständlich wirkt statt erlernt. Jede Oberfläche prägt ein Erlebnis; jede Entscheidung beeinflusst Vertrauen."
+      },
+      {
+        "title": "Beratung",
+        "body": "Klares Denken für Organisationen im Wandel — auch in regulierten Branchen, in denen der Spielraum für Fehler klein und der Preis für Unklarheit hoch ist."
+      },
+      {
+        "title": "Prozesse &amp; Systeme",
+        "body": "Wir sehen uns an, wie Arbeit tatsächlich abläuft, und beseitigen die Reibung, die niemand eingeplant hat. Prozesse sollten sich natürlich anfühlen; Komplexität sollte zu Klarheit werden."
+      }
+    ],
+
+    "philosophy_eyebrow": "Unsere Philosophie",
+    "philosophy_pull": "Die besten Lösungen beginnen selten mit Code.<br class=\"brk\">\n        <span class=\"pull-accent\">Sie beginnen mit Zuhören.</span>",
+    "philosophy_steps": [
+      { "title": "Zuhören", "body": "Bevor wir etwas vorschlagen, verstehen wir das Problem so, wie die Menschen es erleben, die damit leben." },
+      { "title": "Verstehen", "body": "Wir erfassen das System rund um das Problem — technisch, organisatorisch und menschlich." },
+      { "title": "Bessere Fragen stellen", "body": "Erst dann wählen wir die Technologien, Architekturen und Werkzeuge, die es wirklich lösen." }
+    ],
+    "philosophy_closing": "Statt Trends zu folgen, verfolgen wir Lösungen, die noch lange wertvoll bleiben, nachdem sich die neueste Technologie verändert hat. Die Branchen mögen wechseln. Die Technologien werden sich weiterentwickeln. Unsere Prinzipien bleiben.",
+
+    "values_eyebrow": "Unsere Werte",
+    "values_h2": "Woran wir festhalten.",
+    "values": [
+      { "title": "Bedachtsamkeit", "body": "Jede Entscheidung verdient Überlegung. Gute Technologie beginnt damit, Menschen zu verstehen." },
+      { "title": "Klarheit", "body": "Wir reduzieren Komplexität. Wir schaffen Systeme, denen Menschen vertrauen und die sie verstehen können." },
+      { "title": "Handwerk", "body": "Qualität geht uns vor Tempo. Details zählen, weil Details Erlebnisse prägen." },
+      { "title": "Neugier", "body": "Wir lernen weiter. Innovation beginnt damit, bessere Fragen zu stellen." },
+      { "title": "Integrität", "body": "Wir handeln transparent und verantwortungsvoll. Vertrauen entsteht durch Verlässlichkeit." },
+      { "title": "Menschliches Erleben", "body": "Technologie soll Menschen unterstützen, nicht überfordern. Jede Interaktion kann das Leben einfacher machen." }
+    ]
+  },
+
+  "references": {
+    "title": "Referenzen — Axomis Labs",
+    "description": "Ausgewählte Arbeiten von Axomis Labs — Erfahrung, eigene Produkte und Beratungsmandate.",
+    "og_title": "Referenzen — Axomis Labs",
+    "og_description": "Erfahrung, eigene Produkte und Beratungsmandate.",
+
+    "experience_eyebrow": "Erfahrung",
+    "experience_h1": "Woher das Denken kommt.",
+    "experience_prose": [
+      "Hinter Axomis Labs stehen mehr als zehn Jahre <strong>System- und Datenbankarchitektur, Implementierung und Projektleitung in der Pharmaindustrie</strong> — ein Umfeld, in dem ein System erst dann als funktionierend gilt, wenn es nachweislich funktioniert, und in dem jede Änderung Dokumentation und Verantwortung mit sich bringt.",
+      "Dazu kommen Jahre in der <strong>Computersystemvalidierung</strong>: Systeme zum reibungslosen Laufen zu bringen und dabei jede regulatorische Anforderung zu erfüllen. Das prägt eine bestimmte Haltung — für den Nachweis zu entwerfen, nicht nur für die Funktion.",
+      "Weniger offensichtlich: <strong>fünfundzwanzig Jahre Sport</strong> in sehr unterschiedlichen Disziplinen — Kampfsport, Ballsport, Volleyball, Tanz, Tauchen. Was in die Arbeit einfließt, ist nicht der Sport, sondern die Haltung dahinter: Fokus, Disziplin und das Wissen, was es braucht, um in etwas Unvertrautem wirklich gut zu werden. Genau deshalb ist die Branche auch nicht der Punkt — übertragbar ist die Disziplin, nicht die Domäne."
+    ],
+    "experience_tiles": [
+      { "title": "Regulierte Systeme", "body": "Über zehn Jahre Architektur, Implementierung und Projektleitung in der Pharmabranche, wo Korrektheit Anforderung ist und nicht Anspruch." },
+      { "title": "Validierung &amp; Compliance", "body": "Computersystemvalidierung — Systeme bauen, die reibungslos laufen und sich zugleich gegenüber den geltenden Regeln nachweisen lassen." },
+      { "title": "Fokus &amp; Disziplin", "body": "Fünfundzwanzig Jahre Sport in völlig verschiedenen Disziplinen. Übertragbar ist der Fokus und die Disziplin, an einer Sache zu bleiben, bis sie wirklich gut ist." }
+    ],
+    "experience_note": "Der Ansatz ist nicht an eine Branche gebunden. Er trägt überall dort, wo Systeme zum Laufen gebracht werden und einer Prüfung standhalten müssen — pharmazeutische und andere regulierte Umgebungen eingeschlossen.",
+
+    "products_eyebrow": "Produkte",
+    "products_h2": "Software, die wir selbst bauen und betreiben.",
+    "products_intro": "Eigene Produkte durch Design, Release und Betrieb tragen.",
+    "products": [
+      {
+        "title": "TournaQ Volley",
+        "status": "In der Beta",
+        "status_class": "status status-beta",
+        "body": "Eine Plattform für Spiel- und Turnierverwaltung, gebaut für die Abläufe, die auf dem Feld stattfinden. Sie soll Menschen zusammenbringen und Organisatoren wie Spielern erlauben, Veranstaltungen reibungslos durchzuführen — ohne die Reibung, die sonst dazugehört.",
+        "link": "https://tournaq.com",
+        "link_label": "tournaq.com"
+      },
+      {
+        "title": "Dokumentenerfassung &amp; Ablage",
+        "status": "In Entwicklung",
+        "status_class": "status",
+        "meta": "Arbeitstitel — Name wird noch bekannt gegeben",
+        "body": "Liest Dokumente, extrahiert die relevanten Daten und legt sie automatisch in einer strukturierten Hierarchie ab, die sich später auswerten lässt. Integriert sich mit Google Drive und ist DSGVO-konform, sodass Sie sich auf den Ablageprozess konzentrieren können statt darauf, wo die Daten landen."
+      },
+      {
+        "title": "Trainingsplanung",
+        "status": "In Entwicklung",
+        "status_class": "status",
+        "meta": "Arbeitstitel — Name wird noch bekannt gegeben",
+        "body": "Lassen Sie den Plan von KI erstellen und bauen Sie ihn dann anhand Ihrer eigenen Erfahrung um, bis er wirklich Ihrer ist — die Art von Struktur, die einen Sportler auf professionelles Niveau bringt."
+      },
+      {
+        "title": "Weiteres in Vorbereitung",
+        "status": "In Planung",
+        "status_class": "status",
+        "soft": true,
+        "body": "Weitere Anwendungen und Systeme sind in Betracht — geformt aus laufenden Gesprächen mit Kunden."
+      }
+    ],
+
+    "consulting_eyebrow": "Beratung",
+    "consulting_h2": "Arbeit, die vor der Software beginnt.",
+    "consulting_intro": "Von einer einzelnen Anwendung bis zum unternehmensweiten Digitalisierungsschritt — zugeschnitten auf das, was das Unternehmen als Nächstes wirklich braucht.",
+    "consulting_tiles": [
+      { "title": "Projekt- &amp; Organisationsmanagement", "body": "Arbeit so strukturieren, dass sie geplant, delegiert und abgeschlossen werden kann — mit Entscheidungen, die vorbereitet, dokumentiert und später nachvollziehbar sind." },
+      { "title": "Daten- &amp; Prozessmanagement", "body": "Daten an einen verlässlichen Ort bringen und die Prozesse darum herum in eine Form, die trägt — von industriellen Abläufen bis zu Anwendungen im Sport." },
+      { "title": "Produktmanagement", "body": "Entscheiden, was gebaut wird, in welcher Reihenfolge und was bewusst wegbleibt — und dann bis zur Auslieferung dabeibleiben, statt eine Spezifikation zu übergeben." },
+      { "title": "Implementierung", "body": "Ein System vom Requirements Engineering über den Test bis zur Produktivübergabe führen und dabeibleiben, bis es läuft. Geprägt von regulierter Arbeit, in der nichts ohne belastbaren Nachweis in Betrieb geht." },
+      { "title": "Softwareauswahl", "body": "Das Marktangebot gegen den tatsächlichen Bedarf halten, damit Sie das Richtige kaufen — oder früh erkennen, dass Eigenentwicklung die bessere Antwort ist." },
+      { "title": "Digitale Transformation", "body": "Für kleinere Unternehmen, die schneller werden wollen: beginnend bei einer einzelnen Anwendung bis hin zur Neugestaltung von Erlösströmen durch Digitalisierung und Optimierung." }
+    ],
+    "consulting_note": "Mandate werden passend zugeschnitten — ein definiertes Projekt, laufende Unterstützung oder eine individuelle Vereinbarung, wenn das für beide Seiten besser passt."
+  },
+
+  "contact_page": {
+    "title": "Kontakt — Axomis Labs",
+    "description": "Nehmen Sie Kontakt mit Axomis Labs auf — durchdachte digitale Produkte, Systeme und Beratung.",
+    "og_title": "Kontakt — Axomis Labs",
+    "og_description": "Sprechen wir über die Aufgabe, bevor wir über die Lösung sprechen."
+  }
+}

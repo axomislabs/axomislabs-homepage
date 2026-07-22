@@ -9,12 +9,17 @@
 <meta name="theme-color" content="#2E3133" media="(prefers-color-scheme: dark)">
 
 <link rel="canonical" href="https://axomislabs.com/contact.html">
+<link rel="alternate" hreflang="en" href="https://axomislabs.com/contact.html">
+<link rel="alternate" hreflang="de" href="https://axomislabs.com/de/contact.html">
+<link rel="alternate" hreflang="es" href="https://axomislabs.com/es/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://axomislabs.com/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Axomis Labs">
 <meta property="og:title" content="Contact — Axomis Labs">
 <meta property="og:description" content="Let's talk about the challenge before we talk about the solution.">
 <meta property="og:url" content="https://axomislabs.com/contact.html">
 <meta property="og:image" content="https://axomislabs.com/assets/og-image.png">
+<meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -62,6 +67,14 @@
           </ul>
         </li>
         <li><a class="nav-cta" href="contact.html">Contact</a></li>
+        <li class="has-menu lang-menu">
+          <a href="contact.html" aria-label="Language">EN <span class="chev" aria-hidden="true"></span></a>
+          <ul class="submenu">
+            <li><a href="contact.html" hreflang="en" lang="en" aria-current="true">English</a></li>
+            <li><a href="de/contact.html" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="es/contact.html" hreflang="es" lang="es">Español</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
@@ -76,8 +89,7 @@
       <p class="eyebrow reveal">Contact</p>
       <h1 class="reveal">Let's talk about the challenge before we talk about the solution.</h1>
       <p class="lead reveal">
-        Whether you're building something new, untangling something existing, or simply
-        thinking out loud — we'd like to hear about it.
+        Whether you're building something new, untangling something existing, or simply thinking out loud — we'd like to hear about it.
       </p>
       <p class="reveal">
         <a class="mail" href="mailto:info@axomislabs.com">info@axomislabs.com</a>
@@ -100,49 +112,6 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  var toggle = document.querySelector(".nav-toggle");
-  var list = document.getElementById("nav-list");
-  toggle.addEventListener("click", function () {
-    var open = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!open));
-    list.classList.toggle("open", !open);
-  });
-  list.addEventListener("click", function (e) {
-    if (e.target.tagName === "A") {
-      toggle.setAttribute("aria-expanded", "false");
-      list.classList.remove("open");
-    }
-  });
-
-  var head = document.querySelector(".site-head");
-  var onScroll = function () { head.classList.toggle("scrolled", window.scrollY > 24); };
-  addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
-    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("shown"); });
-    return;
-  }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("shown");
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0 });
-  document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
-
-  setTimeout(function () {
-    document.querySelectorAll(".reveal:not(.shown)").forEach(function (el) {
-      if (el.getBoundingClientRect().top < innerHeight) { el.classList.add("shown"); }
-    });
-  }, 1200);
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
