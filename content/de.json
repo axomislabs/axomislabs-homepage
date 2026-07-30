@@ -121,11 +121,12 @@
         "link_label": "tournaq.com"
       },
       {
-        "title": "Dokumentenerfassung &amp; Ablage",
+        "title": "DoQLoom",
         "status": "In Entwicklung",
         "status_class": "status",
-        "meta": "Arbeitstitel — Name wird noch bekannt gegeben",
-        "body": "Liest Dokumente, extrahiert die relevanten Daten und legt sie automatisch in einer strukturierten Hierarchie ab, die sich später auswerten lässt. Integriert sich mit Google Drive und ist DSGVO-konform, sodass Sie sich auf den Ablageprozess konzentrieren können statt darauf, wo die Daten landen."
+        "body": "Liest Dokumente, extrahiert die relevanten Daten und legt sie automatisch in einer strukturierten Hierarchie ab, die sich später auswerten lässt. Integriert sich mit Google Drive und ist DSGVO-konform, sodass Sie sich auf den Ablageprozess konzentrieren können statt darauf, wo die Daten landen.",
+        "link": "https://doqloom.com",
+        "link_label": "doqloom.com"
       },
       {
         "title": "Trainingsplanung",

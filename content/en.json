@@ -121,11 +121,12 @@
         "link_label": "tournaq.com"
       },
       {
-        "title": "Document capture &amp; filing",
+        "title": "DoQLoom",
         "status": "In development",
         "status_class": "status",
-        "meta": "Working title — name to be announced",
-        "body": "Reads documents, extracts the data that matters, and files them automatically into a structured hierarchy that can be analysed later. Integrates with Google Drive and conforms with GDPR, so you can focus on the filing process rather than on where the data ends up."
+        "body": "Reads documents, extracts the data that matters, and files them automatically into a structured hierarchy that can be analysed later. Integrates with Google Drive and conforms with GDPR, so you can focus on the filing process rather than on where the data ends up.",
+        "link": "https://doqloom.com",
+        "link_label": "doqloom.com"
       },
       {
         "title": "Workout planning",

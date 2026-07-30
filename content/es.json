@@ -121,11 +121,12 @@
         "link_label": "tournaq.com"
       },
       {
-        "title": "Captura y archivo de documentos",
+        "title": "DoQLoom",
         "status": "En desarrollo",
         "status_class": "status",
-        "meta": "Título provisional — nombre por anunciar",
-        "body": "Lee documentos, extrae los datos que importan y los archiva automáticamente en una jerarquía estructurada que puede analizarse después. Se integra con Google Drive y cumple el RGPD, de modo que pueda centrarse en el proceso de archivo y no en dónde acaban los datos."
+        "body": "Lee documentos, extrae los datos que importan y los archiva automáticamente en una jerarquía estructurada que puede analizarse después. Se integra con Google Drive y cumple el RGPD, de modo que pueda centrarse en el proceso de archivo y no en dónde acaban los datos.",
+        "link": "https://doqloom.com",
+        "link_label": "doqloom.com"
       },
       {
         "title": "Planificación de entrenamientos",
