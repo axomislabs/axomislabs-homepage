@@ -625,19 +625,7 @@ img, svg { max-width: 100%; height: auto; display: block; }
   gap: 0.6rem;
   margin-bottom: 0.6rem;
 }
-/* Flex, not inline: an inline image is a line-break opportunity, so in a narrow
-   tile the icon would drop onto its own line above the title. */
-.ref-head h3 { margin: 0; display: flex; align-items: center; gap: 0.45em; }
-
-/* Favicon of the linked product, sized in em so it tracks the heading. The
-   radius clips whatever corner the source icon ships with — one has a baked-in
-   square, the other transparent corners — so the two read as one set. */
-.ref-icon {
-  flex: none;
-  width: 1.15em;
-  height: 1.15em;
-  border-radius: 22%;
-}
+.ref-head h3 { margin: 0; }
 
 .ref-list p { color: var(--text-muted); margin-bottom: 0.7rem; }
 .ref-list p:last-child { margin-bottom: 0; }
@@ -667,15 +655,33 @@ img, svg { max-width: 100%; height: auto; display: block; }
   border-color: color-mix(in srgb, var(--accent) 45%, transparent);
 }
 
+/* Flex, not inline: an inline image is a line-break opportunity, so a narrow
+   tile could strand the icon on a line of its own above the URL. The size sits
+   on the paragraph rather than the anchor so the em-sized icon tracks it. */
+.ref-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.9063rem;
+}
 .ref-link a {
   font-family: var(--font-head);
   font-weight: 600;
-  font-size: 0.9063rem;
   color: var(--accent-ink);
   text-decoration: none;
   border-bottom: 1px solid var(--accent);
 }
 .ref-link a:hover { border-bottom-color: transparent; }
+
+/* Favicon of the linked product. The radius clips whatever corner the source
+   icon ships with — one has a baked-in square, the other transparent corners —
+   so the two read as one set. */
+.ref-icon {
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 22%;
+}
 
 .note {
   margin-top: clamp(1.75rem, 3.5vw, 2.5rem);

@@ -96,20 +96,20 @@ def products(items, root=""):
         cls = "reveal tile-soft" if p.get("soft") else "reveal"
         meta = f'\n  <p class="meta">{p["meta"]}</p>' if p.get("meta") else ""
         # The product's own favicon, copied into assets/ rather than hotlinked so
-        # the page still makes no third-party requests. Decorative: the product
-        # name sits right beside it, so alt is empty.
+        # the page still makes no third-party requests. It sits with the link
+        # rather than the title, and is decorative — the URL reads it out.
         icon = ""
         if p.get("icon"):
             icon = (f'<img class="ref-icon" src="{root}assets/{p["icon"]}" alt="" '
-                    f'width="20" height="20">')
+                    f'width="17" height="17">')
         link = ""
         if p.get("link"):
-            link = (f'\n  <p class="ref-link"><a href="{p["link"]}" target="_blank" '
+            link = (f'\n  <p class="ref-link">{icon}<a href="{p["link"]}" target="_blank" '
                     f'rel="noopener">{p["link_label"]}</a></p>')
         out.append(
             f'<li class="{cls}">\n'
             f'  <div class="ref-head">\n'
-            f'    <h3>{icon}{p["title"]}</h3>\n'
+            f'    <h3>{p["title"]}</h3>\n'
             f'    <span class="{p["status_class"]}">{p["status"]}</span>\n'
             f'  </div>{meta}\n'
             f'  <p>\n    {p["body"]}\n  </p>{link}\n'

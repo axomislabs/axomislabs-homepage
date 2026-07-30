@@ -132,11 +132,12 @@ If a genuine vector original of the logo ever turns up, prefer it over this trac
 
 ## Product icons
 
-The product cards on the references page show the linked product's own favicon,
-set by an optional `icon` key on a `products` entry in `content/*.json`. These are
-the two files in `site/assets/` that `build-logo-assets.py` does not produce —
-they come from the products themselves and are copied in by hand rather than
-hotlinked, so the page still makes no third-party requests:
+The product cards on the references page show the linked product's own favicon in
+front of its URL, set by an optional `icon` key on a `products` entry in
+`content/*.json`. It renders with the link, so an entry with no `link` shows no
+icon. These are the two files in `site/assets/` that `build-logo-assets.py` does
+not produce — they come from the products themselves and are copied in by hand
+rather than hotlinked, so the page still makes no third-party requests:
 
 ```bash
 curl -sLO https://tournaq.com/apple-touch-icon.png
