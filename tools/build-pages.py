@@ -90,11 +90,18 @@ def tiles(items):
     return indent("\n".join(out), 8)
 
 
-def products(items):
+def products(items, root=""):
     out = []
     for p in items:
         cls = "reveal tile-soft" if p.get("soft") else "reveal"
         meta = f'\n  <p class="meta">{p["meta"]}</p>' if p.get("meta") else ""
+        # The product's own favicon, copied into assets/ rather than hotlinked so
+        # the page still makes no third-party requests. Decorative: the product
+        # name sits right beside it, so alt is empty.
+        icon = ""
+        if p.get("icon"):
+            icon = (f'<img class="ref-icon" src="{root}assets/{p["icon"]}" alt="" '
+                    f'width="20" height="20">')
         link = ""
         if p.get("link"):
             link = (f'\n  <p class="ref-link"><a href="{p["link"]}" target="_blank" '
@@ -102,7 +109,7 @@ def products(items):
         out.append(
             f'<li class="{cls}">\n'
             f'  <div class="ref-head">\n'
-            f'    <h3>{p["title"]}</h3>\n'
+            f'    <h3>{icon}{p["title"]}</h3>\n'
             f'    <span class="{p["status_class"]}">{p["status"]}</span>\n'
             f'  </div>{meta}\n'
             f'  <p>\n    {p["body"]}\n  </p>{link}\n'
@@ -235,7 +242,7 @@ def main():
                     "products_eyebrow": src["products_eyebrow"],
                     "products_h2": src["products_h2"],
                     "products_intro": src["products_intro"],
-                    "products": products(src["products"]),
+                    "products": products(src["products"], root_for(lang)),
                     "consulting_eyebrow": src["consulting_eyebrow"],
                     "consulting_h2": src["consulting_h2"],
                     "consulting_intro": src["consulting_intro"],

@@ -625,7 +625,19 @@ img, svg { max-width: 100%; height: auto; display: block; }
   gap: 0.6rem;
   margin-bottom: 0.6rem;
 }
-.ref-head h3 { margin: 0; }
+/* Flex, not inline: an inline image is a line-break opportunity, so in a narrow
+   tile the icon would drop onto its own line above the title. */
+.ref-head h3 { margin: 0; display: flex; align-items: center; gap: 0.45em; }
+
+/* Favicon of the linked product, sized in em so it tracks the heading. The
+   radius clips whatever corner the source icon ships with — one has a baked-in
+   square, the other transparent corners — so the two read as one set. */
+.ref-icon {
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 22%;
+}
 
 .ref-list p { color: var(--text-muted); margin-bottom: 0.7rem; }
 .ref-list p:last-child { margin-bottom: 0; }

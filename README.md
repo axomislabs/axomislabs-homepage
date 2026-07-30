@@ -108,7 +108,8 @@ links; full copper is reserved for display type, rules, and decorative elements.
 ## Regenerating the logo assets
 
 The only true source is `Branding/Axomislabs - Logo.png` — a flat RGB render on a
-white plate. Everything in `site/assets/` is derived from it:
+white plate. Every logo and favicon in `site/assets/` is derived from it (the
+exception is `product-*.png`, covered below):
 
 ```bash
 brew install potrace
@@ -128,3 +129,19 @@ understanding before changing:
   300px+ in area while the noise is under 40px, so the threshold sits in a wide gap.
 
 If a genuine vector original of the logo ever turns up, prefer it over this trace.
+
+## Product icons
+
+The product cards on the references page show the linked product's own favicon,
+set by an optional `icon` key on a `products` entry in `content/*.json`. These are
+the two files in `site/assets/` that `build-logo-assets.py` does not produce —
+they come from the products themselves and are copied in by hand rather than
+hotlinked, so the page still makes no third-party requests:
+
+```bash
+curl -sLO https://tournaq.com/apple-touch-icon.png
+sips -s format png -z 40 40 apple-touch-icon.png --out site/assets/product-tournaq.png
+```
+
+40px for a 20px slot, so they stay sharp on retina. Re-run it if a product
+rebrands; drop the `icon` key and the card renders without one.

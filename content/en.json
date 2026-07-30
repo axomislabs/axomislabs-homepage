@@ -116,6 +116,7 @@
         "title": "TournaQ Volley",
         "status": "In beta",
         "status_class": "status status-beta",
+        "icon": "product-tournaq.png",
         "body": "A games and tournament management platform, built to support the processes that happen on the field. Designed to bring people together, and to let organisers and players run events smoothly — without the friction that usually comes with them.",
         "link": "https://tournaq.com",
         "link_label": "tournaq.com"
@@ -124,8 +125,9 @@
         "title": "DoQLoom",
         "status": "In development",
         "status_class": "status",
+        "icon": "product-doqloom.png",
         "body": "Reads documents, extracts the data that matters, and files them automatically into a structured hierarchy that can be analysed later. Integrates with Google Drive and conforms with GDPR, so you can focus on the filing process rather than on where the data ends up.",
-        "link": "https://doqloom.com",
+        "link": "https://www.doqloom.com",
         "link_label": "doqloom.com"
       },
       {
