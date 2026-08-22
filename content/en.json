@@ -1,6 +1,8 @@
 {
   "lang": "en",
+
   "label": "English",
+
   "code": "EN",
 
   "ui": {
@@ -23,7 +25,8 @@
     "values": "Values",
     "experience": "Experience",
     "products": "Products",
-    "consulting": "Consulting"
+    "consulting": "Consulting & services",
+    "social_media_campaigns": "Social media campaigns"
   },
 
   "contact": {
@@ -70,21 +73,48 @@
     "philosophy_eyebrow": "Our philosophy",
     "philosophy_pull": "The best solutions rarely begin with code.<br class=\"brk\">\n        <span class=\"pull-accent\">They begin with listening.</span>",
     "philosophy_steps": [
-      { "title": "Listen", "body": "Before proposing anything, we understand the problem as the people living with it experience it." },
-      { "title": "Understand", "body": "We map the system around the problem — technical, organisational, and human." },
-      { "title": "Ask better questions", "body": "Only then do we choose the technologies, architectures, and tools that genuinely solve it." }
+      {
+        "title": "Listen",
+        "body": "Before proposing anything, we understand the problem as the people living with it experience it."
+      },
+      {
+        "title": "Understand",
+        "body": "We map the system around the problem — technical, organisational, and human."
+      },
+      {
+        "title": "Ask better questions",
+        "body": "Only then do we choose the technologies, architectures, and tools that genuinely solve it."
+      }
     ],
     "philosophy_closing": "Rather than chasing trends, we pursue solutions that remain valuable long after the newest technology has changed. The industries may change. The technologies will evolve. Our principles remain.",
 
     "values_eyebrow": "Our values",
     "values_h2": "What we hold to.",
     "values": [
-      { "title": "Thoughtfulness", "body": "Every decision deserves consideration. Good technology begins with understanding people." },
-      { "title": "Clarity", "body": "We reduce complexity. We create systems that people can trust and understand." },
-      { "title": "Craftsmanship", "body": "We value quality over speed. Details matter, because details shape experiences." },
-      { "title": "Curiosity", "body": "We continue learning. Innovation begins with asking better questions." },
-      { "title": "Integrity", "body": "We act transparently and responsibly. Trust is earned through consistency." },
-      { "title": "Human Experience", "body": "Technology should support people, not overwhelm them. Every interaction can make life simpler." }
+      {
+        "title": "Thoughtfulness",
+        "body": "Every decision deserves consideration. Good technology begins with understanding people."
+      },
+      {
+        "title": "Clarity",
+        "body": "We reduce complexity. We create systems that people can trust and understand."
+      },
+      {
+        "title": "Craftsmanship",
+        "body": "We value quality over speed. Details matter, because details shape experiences."
+      },
+      {
+        "title": "Curiosity",
+        "body": "We continue learning. Innovation begins with asking better questions."
+      },
+      {
+        "title": "Integrity",
+        "body": "We act transparently and responsibly. Trust is earned through consistency."
+      },
+      {
+        "title": "Human Experience",
+        "body": "Technology should support people, not overwhelm them. Every interaction can make life simpler."
+      }
     ]
   },
 
@@ -102,9 +132,18 @@
       "Less obviously, <strong>twenty-five years of sport</strong> across very different disciplines — combat sports, ball sports, volleyball, dance, diving. What carries into the work isn't the sport but the habit behind it: focus, discipline, and knowing what it takes to get good at something unfamiliar. It is also why the industry isn't the point — what transfers is the discipline, not the domain."
     ],
     "experience_tiles": [
-      { "title": "Regulated systems", "body": "10+ years of architecture, implementation and project management in pharma, where correctness is a requirement rather than an aspiration." },
-      { "title": "Validation &amp; compliance", "body": "Computerised systems validation — building systems that run seamlessly and can still be evidenced against the rules that govern them." },
-      { "title": "Focus &amp; discipline", "body": "Twenty-five years of sport across unrelated disciplines. What transfers is the focus, and the discipline to stay with something until it is genuinely good." }
+      {
+        "title": "Regulated systems",
+        "body": "10+ years of architecture, implementation and project management in pharma, where correctness is a requirement rather than an aspiration."
+      },
+      {
+        "title": "Validation &amp; compliance",
+        "body": "Computerised systems validation — building systems that run seamlessly and can still be evidenced against the rules that govern them."
+      },
+      {
+        "title": "Focus &amp; discipline",
+        "body": "Twenty-five years of sport across unrelated disciplines. What transfers is the focus, and the discipline to stay with something until it is genuinely good."
+      }
     ],
     "experience_note": "The approach isn't tied to one sector. It transfers wherever systems have to be made to work and stand up to scrutiny — pharmaceutical and other regulated environments included.",
 
@@ -146,16 +185,44 @@
       }
     ],
 
-    "consulting_eyebrow": "Consulting",
+    "consulting_eyebrow": "Consulting & services",
     "consulting_h2": "Work that starts before the software does.",
-    "consulting_intro": "From a single application to a company-wide step up in digitalisation — scoped to whatever the business actually needs next.",
+    "consulting_intro": "From a single application to a company-wide step up in digitalisation — and the online presence that goes with it. Scoped to whatever the business actually needs next.",
     "consulting_tiles": [
-      { "title": "Project &amp; organisation management", "body": "Structuring work so it can be planned, delegated and finished — with decisions prepared, documented and open to review later." },
-      { "title": "Data &amp; process management", "body": "Getting data into one dependable place and the processes around it into a shape that holds, from industrial operations through to sports applications." },
-      { "title": "Product management", "body": "Deciding what to build, in what order, and what to leave out — then staying with it through delivery rather than handing over a specification." },
-      { "title": "Implementation", "body": "Taking a system from requirements engineering through testing to the production handshake, and staying with it until it runs. Shaped by regulated work, where nothing goes live without the evidence to support it." },
-      { "title": "Software selection", "body": "Comparing what's on the market against what you need, so you buy the right thing — or find out early that building is the better answer." },
-      { "title": "Digital transformation", "body": "For smaller companies wanting to move faster: starting with a single application and going as far as reworking revenue streams through digitalisation and optimisation." }
+      {
+        "title": "Project &amp; organisation management",
+        "body": "Structuring work so it can be planned, delegated and finished — with decisions prepared, documented and open to review later."
+      },
+      {
+        "title": "Data &amp; process management",
+        "body": "Getting data into one dependable place and the processes around it into a shape that holds — contract capture, document filing, payments and scheduling included, from industrial operations through to sports applications."
+      },
+      {
+        "title": "Product management",
+        "body": "Deciding what to build, in what order, and what to leave out — then staying with it through delivery rather than handing over a specification."
+      },
+      {
+        "title": "Implementation",
+        "body": "Taking a system from requirements engineering through testing to the production handshake, and staying with it until it runs. Shaped by regulated work, where nothing goes live without the evidence to support it."
+      },
+      {
+        "title": "Software selection",
+        "body": "Comparing what's on the market against what you need, so you buy the right thing — or find out early that building is the better answer."
+      },
+      {
+        "title": "Digital transformation",
+        "body": "For smaller companies wanting to move faster: one central archive instead of scattered folders, contracts captured automatically instead of by hand, and key figures that are simply there — going as far as reworking revenue streams through digitalisation."
+      },
+      {
+        "title": "Web presence",
+        "body": "The site itself and everything that keeps it running. Static pages or WordPress &mdash; decided by who maintains it afterwards rather than by what is quickest to build &mdash; and carrying the same message as everything else you publish."
+      },
+      {
+        "title": "Social media campaigns",
+        "body": "Strategy, plan and production for a specific occasion: a new location, an extension, a launch. Planned as a sequence with an arc rather than post by post.",
+        "link": "references/social-media-campaigns.html",
+        "link_label": "How we work"
+      }
     ],
     "consulting_note": "Engagements are shaped to fit — a defined project, ongoing support, or a bespoke arrangement where that suits both sides better."
   },
@@ -165,5 +232,84 @@
     "description": "Get in touch with Axomis Labs — thoughtful digital products, systems and consulting.",
     "og_title": "Contact — Axomis Labs",
     "og_description": "Let's talk about the challenge before we talk about the solution."
+  },
+  "references/social-media-campaigns": {
+    "title": "Social media campaigns — Axomis Labs",
+    "description": "Strategy, campaign plan and production for a specific occasion — planned as a sequence with an arc and built as a system you can keep running.",
+    "og_title": "Social media campaigns — Axomis Labs",
+    "og_description": "Assessment, positioning, release plan and production — with a worked example.",
+
+    "hero_eyebrow": "Consulting &amp; services",
+    "hero_h1": "Social media campaigns.",
+    "hero_lead": "A campaign exists to do something: bring in members, customers or bookings, and put distance between you and whoever else is competing for the same attention. We start by working out what you genuinely have that the others cannot claim &mdash; then plan a sequence that carries it over weeks instead of spending it in one post.",
+
+    "method_eyebrow": "How we work",
+    "method_h2": "Four steps, in this order.",
+    "method": [
+      {
+        "title": "Assessment",
+        "body": "What is already there and what is actually happening: your channel and its reach, who follows it, what the competition is doing, and what the occasion is. Nothing is produced before this is written down."
+      },
+      {
+        "title": "Your own strengths",
+        "body": "What you have that the others cannot claim. It is usually more concrete than a slogan &mdash; a room, a piece of equipment, a range of classes, a location. That becomes the line the whole campaign is built on."
+      },
+      {
+        "title": "Release plan",
+        "body": "A fixed schedule across the weeks around the occasion: what is announced when, where the teasers sit, where the reveal sits. The arc is the point &mdash; it holds attention over time rather than spending it at once, and it gives followers a reason to keep watching."
+      },
+      {
+        "title": "Production and handover",
+        "body": "Everything the plan calls for, built from one design system, plus the files and instructions to carry on afterwards."
+      }
+    ],
+
+    "package_eyebrow": "The package",
+    "package_h2": "What the plan includes.",
+    "package_intro": "The assessment ends in a plan. The plan names all of this, and the scope is agreed before anything is produced.",
+    "package": [
+      {
+        "title": "Positioning and message",
+        "body": "The one line the campaign is built on, and the reasoning behind it."
+      },
+      {
+        "title": "Editorial plan",
+        "body": "Feed, stories and reels laid out across the weeks, each item briefed well enough that someone else could produce it."
+      },
+      {
+        "title": "Art direction",
+        "body": "How it looks and why &mdash; decided once, against the message, not per post."
+      },
+      {
+        "title": "Design system and templates",
+        "body": "Format, colour, typeface, logo and margins fixed centrally, so the series reads as a series and new posts stay consistent."
+      },
+      {
+        "title": "Production and copy",
+        "body": "The assets themselves, the text that goes with them, image work and compositing from the material that already exists."
+      },
+      {
+        "title": "Handover and documentation",
+        "body": "Source files and plain-language instructions, so the system keeps working without us."
+      }
+    ],
+
+    "case_eyebrow": "In practice",
+    "case_h2": "Chok Dee Bielefeld.",
+    "case_prose": [
+      "A martial arts school in Bielefeld is adding a second hall: over 850 m&sup2; across two floors, striking upstairs and ground work downstairs. That is a real improvement in what members get, and it opens in November.",
+      "It is also not the only news in town &mdash; a competitor in the same city has built as well and is posting about it. So the task was not to announce an opening. It was to make the difference legible, carry it across four weeks of posts, stories and reels, and turn it into trial sessions and sign-ups rather than one good day of reach.",
+      "The assessment produced the line the campaign is built on: two levels, two disciplines, one school &mdash; something the competitor cannot claim. Everything after that was produced against it: the release plan, the design system, the templates and the review page below. The campaign runs from the opening, and measurement runs with it from the first day."
+    ],
+    "case_note": "What the finished work looks like &mdash; the review page the client signs off on:",
+    "case_link": "https://axomislabs.github.io/cdb-review-62ad09b6/",
+    "case_link_label": "Chok Dee Bielefeld, campaign review",
+
+    "models_eyebrow": "Models",
+    "models_h2": "Run by us, or by you.",
+    "models_prose": [
+      "Once the system exists, someone has to operate it. That can be us &mdash; planning, producing and publishing on the agreed schedule &mdash; or your own team, working from the templates and the plan. Most engagements land in between: we carry the launch phase, you take over once it is running.",
+      "Which way round it goes is decided when the plan is written, not before. Anything beyond that we work out in a conversation."
+    ]
   }
 }

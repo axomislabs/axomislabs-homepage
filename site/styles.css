@@ -824,3 +824,29 @@ img, svg { max-width: 100%; height: auto; display: block; }
 @media (max-width: 46rem) {
   .lang-menu .submenu { right: auto; }
 }
+
+/* A .note is muted body text; a link inside it still needs to read as one.
+   accent-ink rather than accent: this is small text and has to clear AA. */
+.note a { color: var(--accent-ink); border-bottom: 1px solid var(--accent); text-decoration: none; }
+.note a:hover { border-bottom-color: transparent; }
+
+/* A detail page listed under the section anchors it belongs to. The rule says
+   "these sit below the items above" without opening a third menu level, which
+   would have no sensible touch behaviour. */
+.submenu .sub-group {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(215, 207, 195, 0.16);
+}
+@media (max-width: 46rem) {
+  .submenu .sub-group { border-top-color: rgba(215, 207, 195, 0.24); }
+}
+
+/* The eyebrow on a sub-page doubles as the way back to its section. */
+.eyebrow a.up {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+.eyebrow a.up:hover { border-bottom-color: transparent; }

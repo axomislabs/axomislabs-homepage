@@ -26,7 +26,7 @@ OUT = os.path.join(ROOT, "site")
 SITE_URL = "https://axomislabs.com"
 DEFAULT_LANG = "en"                       # published at the root
 LANGS = ["en", "de", "es"]                # order shown in the switcher
-PAGES = ["index", "references", "contact"]
+PAGES = ["index", "references", "contact", "references/social-media-campaigns"]
 OG_LOCALE = {"en": "en_GB", "de": "de_DE", "es": "es_ES"}
 
 
@@ -79,13 +79,23 @@ def prose(paragraphs):
     return indent("\n".join(out), 8)
 
 
-def tiles(items):
+def tiles(items, base=""):
+    """Plain tiles, optionally carrying a link to another page of the site.
+
+    The link is internal, so it stays in the tab and needs no rel="noopener" —
+    unlike products(), which links out. Link targets are written in content as
+    paths from the language root ("references/x.html"); `base` walks back up to
+    that root, so the same string works from any depth and from any language."""
     out = []
     for t in items:
+        link = ""
+        if t.get("link"):
+            link = (f'\n  <p class="ref-link"><a href="{base}{t["link"]}">'
+                    f'{t["link_label"]}</a></p>')
         out.append(
             f'<li class="reveal">\n'
             f'  <h3>{t["title"]}</h3>\n'
-            f'  <p>\n    {t["body"]}\n  </p>\n'
+            f'  <p>\n    {t["body"]}\n  </p>{link}\n'
             f'</li>')
     return indent("\n".join(out), 8)
 
@@ -119,14 +129,20 @@ def products(items, root=""):
 
 # ── Per-language link helpers ──────────────────────────────────────────────
 
-def base_for(lang):
-    """Prefix for links between pages of the same language."""
-    return "" if lang == DEFAULT_LANG else ""
+def depth_of(page):
+    """How many folders deep a page sits inside its own language root."""
+    return page.count("/")
 
 
-def root_for(lang):
-    """Prefix back to site/ for shared assets."""
-    return "" if lang == DEFAULT_LANG else "../"
+def base_for(lang, page):
+    """Prefix from a page back to its own language root, for same-language links."""
+    return "../" * depth_of(page)
+
+
+def root_for(lang, page):
+    """Prefix from a page back to site/, for shared assets. English sits at the
+    root, every other language one folder down — plus however deep the page is."""
+    return "../" * (depth_of(page) + (0 if lang == DEFAULT_LANG else 1))
 
 
 def url_for(lang, page):
@@ -137,8 +153,10 @@ def url_for(lang, page):
 
 
 def href_between(from_lang, to_lang, page):
-    """Relative href from a page in from_lang to the same page in to_lang."""
-    up = "" if from_lang == DEFAULT_LANG else "../"
+    """Relative href from a page in from_lang to the same page in to_lang.
+    Walks up out of the page's folders and out of the language folder, then
+    back down into the target language."""
+    up = "../" * (depth_of(page) + (0 if from_lang == DEFAULT_LANG else 1))
     target = "" if to_lang == DEFAULT_LANG else to_lang + "/"
     return f"{up}{target}{page}.html"
 
@@ -185,8 +203,6 @@ def main():
         shared = {
             "lang": c["lang"],
             "lang_code": c["code"],
-            "base": base_for(lang),
-            "root": root_for(lang),
             "og_locale": OG_LOCALE.get(lang, "en_GB"),
             "contact_eyebrow": contact["eyebrow"],
             "contact_heading": contact["heading"],
@@ -206,11 +222,13 @@ def main():
                 "description": src["description"],
                 "og_title": src["og_title"],
                 "og_description": src["og_description"],
+                "base": base_for(lang, page),
+                "root": root_for(lang, page),
                 "canonical": url_for(lang, page),
                 "hreflang": hreflang_block(page),
                 "lang_links": lang_links(lang, page, all_content),
                 "contact_section": contact_section,
-                "self_href": page + ".html",
+                "self_href": os.path.basename(page) + ".html",
             })
 
             if page == "index":
@@ -242,12 +260,34 @@ def main():
                     "products_eyebrow": src["products_eyebrow"],
                     "products_h2": src["products_h2"],
                     "products_intro": src["products_intro"],
-                    "products": products(src["products"], root_for(lang)),
+                    "products": products(src["products"], root_for(lang, page)),
                     "consulting_eyebrow": src["consulting_eyebrow"],
                     "consulting_h2": src["consulting_h2"],
                     "consulting_intro": src["consulting_intro"],
-                    "consulting_tiles": tiles(src["consulting_tiles"]),
+                    "consulting_tiles": tiles(src["consulting_tiles"], base_for(lang, page)),
                     "consulting_note": src["consulting_note"],
+                })
+            elif page == "references/social-media-campaigns":
+                v.update({
+                    "hero_eyebrow": src["hero_eyebrow"],
+                    "hero_h1": src["hero_h1"],
+                    "hero_lead": src["hero_lead"],
+                    "method_eyebrow": src["method_eyebrow"],
+                    "method_h2": src["method_h2"],
+                    "method": cards(src["method"]),
+                    "package_eyebrow": src["package_eyebrow"],
+                    "package_h2": src["package_h2"],
+                    "package_intro": src["package_intro"],
+                    "package": tiles(src["package"]),
+                    "case_eyebrow": src["case_eyebrow"],
+                    "case_h2": src["case_h2"],
+                    "case_prose": prose(src["case_prose"]),
+                    "case_note": src["case_note"],
+                    "case_link": src["case_link"],
+                    "case_link_label": src["case_link_label"],
+                    "models_eyebrow": src["models_eyebrow"],
+                    "models_h2": src["models_h2"],
+                    "models_prose": prose(src["models_prose"]),
                 })
 
             html = fill(base_tpl, dict(v, main=fill(body_tpl[page], v)))
@@ -257,6 +297,7 @@ def main():
                 sys.exit(f"unresolved placeholders in {lang}/{page}: {sorted(leftover)}")
 
             path = os.path.join(outdir, page + ".html")
+            os.makedirs(os.path.dirname(path), exist_ok=True)
             with open(path, "w", encoding="utf-8") as f:
                 f.write(html)
             written.append(os.path.relpath(path, ROOT))

@@ -1,6 +1,8 @@
 {
   "lang": "es",
+
   "label": "Español",
+
   "code": "ES",
 
   "ui": {
@@ -23,7 +25,8 @@
     "values": "Valores",
     "experience": "Experiencia",
     "products": "Productos",
-    "consulting": "Consultoría"
+    "consulting": "Consultoría y servicios",
+    "social_media_campaigns": "Campañas en redes sociales"
   },
 
   "contact": {
@@ -70,21 +73,48 @@
     "philosophy_eyebrow": "Nuestra filosofía",
     "philosophy_pull": "Las mejores soluciones rara vez empiezan con código.<br class=\"brk\">\n        <span class=\"pull-accent\">Empiezan escuchando.</span>",
     "philosophy_steps": [
-      { "title": "Escuchar", "body": "Antes de proponer nada, entendemos el problema tal como lo viven las personas que conviven con él." },
-      { "title": "Comprender", "body": "Trazamos el sistema alrededor del problema — técnico, organizativo y humano." },
-      { "title": "Hacer mejores preguntas", "body": "Solo entonces elegimos las tecnologías, arquitecturas y herramientas que de verdad lo resuelven." }
+      {
+        "title": "Escuchar",
+        "body": "Antes de proponer nada, entendemos el problema tal como lo viven las personas que conviven con él."
+      },
+      {
+        "title": "Comprender",
+        "body": "Trazamos el sistema alrededor del problema — técnico, organizativo y humano."
+      },
+      {
+        "title": "Hacer mejores preguntas",
+        "body": "Solo entonces elegimos las tecnologías, arquitecturas y herramientas que de verdad lo resuelven."
+      }
     ],
     "philosophy_closing": "En lugar de perseguir tendencias, buscamos soluciones que sigan siendo valiosas mucho después de que la tecnología más reciente haya cambiado. Los sectores pueden cambiar. Las tecnologías evolucionarán. Nuestros principios permanecen.",
 
     "values_eyebrow": "Nuestros valores",
     "values_h2": "A qué nos atenemos.",
     "values": [
-      { "title": "Reflexión", "body": "Cada decisión merece ser pensada. La buena tecnología empieza por entender a las personas." },
-      { "title": "Claridad", "body": "Reducimos la complejidad. Creamos sistemas en los que las personas pueden confiar y que pueden entender." },
-      { "title": "Oficio", "body": "Valoramos la calidad por encima de la velocidad. Los detalles importan, porque los detalles dan forma a las experiencias." },
-      { "title": "Curiosidad", "body": "Seguimos aprendiendo. La innovación empieza por hacer mejores preguntas." },
-      { "title": "Integridad", "body": "Actuamos con transparencia y responsabilidad. La confianza se gana con constancia." },
-      { "title": "Experiencia humana", "body": "La tecnología debe apoyar a las personas, no abrumarlas. Cada interacción puede hacer la vida más sencilla." }
+      {
+        "title": "Reflexión",
+        "body": "Cada decisión merece ser pensada. La buena tecnología empieza por entender a las personas."
+      },
+      {
+        "title": "Claridad",
+        "body": "Reducimos la complejidad. Creamos sistemas en los que las personas pueden confiar y que pueden entender."
+      },
+      {
+        "title": "Oficio",
+        "body": "Valoramos la calidad por encima de la velocidad. Los detalles importan, porque los detalles dan forma a las experiencias."
+      },
+      {
+        "title": "Curiosidad",
+        "body": "Seguimos aprendiendo. La innovación empieza por hacer mejores preguntas."
+      },
+      {
+        "title": "Integridad",
+        "body": "Actuamos con transparencia y responsabilidad. La confianza se gana con constancia."
+      },
+      {
+        "title": "Experiencia humana",
+        "body": "La tecnología debe apoyar a las personas, no abrumarlas. Cada interacción puede hacer la vida más sencilla."
+      }
     ]
   },
 
@@ -102,9 +132,18 @@
       "De forma menos evidente, <strong>veinticinco años de deporte</strong> en disciplinas muy distintas — deportes de combate, deportes de pelota, voleibol, danza, buceo. Lo que se traslada al trabajo no es el deporte, sino el hábito que hay detrás: foco, disciplina y saber lo que hace falta para llegar a ser bueno en algo desconocido. Por eso mismo el sector tampoco es lo importante — lo que se transfiere es la disciplina, no el dominio."
     ],
     "experience_tiles": [
-      { "title": "Sistemas regulados", "body": "Más de diez años de arquitectura, implementación y dirección de proyectos en el sector farmacéutico, donde la corrección es un requisito y no una aspiración." },
-      { "title": "Validación y cumplimiento", "body": "Validación de sistemas informatizados — construir sistemas que funcionen sin fricción y que además puedan evidenciarse frente a las normas que los rigen." },
-      { "title": "Foco y disciplina", "body": "Veinticinco años de deporte en disciplinas sin relación entre sí. Lo que se transfiere es el foco, y la disciplina de quedarse con algo hasta que está realmente bien." }
+      {
+        "title": "Sistemas regulados",
+        "body": "Más de diez años de arquitectura, implementación y dirección de proyectos en el sector farmacéutico, donde la corrección es un requisito y no una aspiración."
+      },
+      {
+        "title": "Validación y cumplimiento",
+        "body": "Validación de sistemas informatizados — construir sistemas que funcionen sin fricción y que además puedan evidenciarse frente a las normas que los rigen."
+      },
+      {
+        "title": "Foco y disciplina",
+        "body": "Veinticinco años de deporte en disciplinas sin relación entre sí. Lo que se transfiere es el foco, y la disciplina de quedarse con algo hasta que está realmente bien."
+      }
     ],
     "experience_note": "El enfoque no está atado a un sector. Se traslada allí donde haya que hacer funcionar sistemas y sostenerlos ante un escrutinio — entornos farmacéuticos y otros entornos regulados incluidos.",
 
@@ -146,16 +185,44 @@
       }
     ],
 
-    "consulting_eyebrow": "Consultoría",
+    "consulting_eyebrow": "Consultoría y servicios",
     "consulting_h2": "Trabajo que empieza antes que el software.",
-    "consulting_intro": "Desde una sola aplicación hasta un salto de digitalización en toda la empresa — dimensionado según lo que el negocio necesite realmente a continuación.",
+    "consulting_intro": "Desde una sola aplicación hasta la digitalización de toda una empresa — y la presencia online que la acompaña. Ajustado a lo que el negocio necesita de verdad a continuación.",
     "consulting_tiles": [
-      { "title": "Gestión de proyectos y organización", "body": "Estructurar el trabajo para que pueda planificarse, delegarse y terminarse — con decisiones preparadas, documentadas y revisables más adelante." },
-      { "title": "Gestión de datos y procesos", "body": "Llevar los datos a un único lugar fiable y dar a los procesos que los rodean una forma que aguante, desde operaciones industriales hasta aplicaciones deportivas." },
-      { "title": "Gestión de producto", "body": "Decidir qué construir, en qué orden y qué dejar fuera — y luego acompañarlo hasta la entrega en lugar de entregar una especificación." },
-      { "title": "Implementación", "body": "Llevar un sistema desde la ingeniería de requisitos, pasando por las pruebas, hasta el traspaso a producción, y quedarse hasta que funcione. Formado por el trabajo en entornos regulados, donde nada entra en producción sin la evidencia que lo respalde." },
-      { "title": "Selección de software", "body": "Comparar lo que ofrece el mercado con lo que usted necesita, para que compre lo adecuado — o descubra pronto que construirlo es la mejor respuesta." },
-      { "title": "Transformación digital", "body": "Para empresas pequeñas que quieren avanzar más rápido: empezando por una sola aplicación y llegando hasta rediseñar las fuentes de ingresos mediante digitalización y optimización." }
+      {
+        "title": "Gestión de proyectos y organización",
+        "body": "Estructurar el trabajo para que pueda planificarse, delegarse y terminarse — con decisiones preparadas, documentadas y revisables más adelante."
+      },
+      {
+        "title": "Gestión de datos y procesos",
+        "body": "Llevar los datos a un lugar fiable y los procesos que los rodean a una forma que aguante — registro de contratos, archivo de documentos, pagos y planificación de citas incluidos, desde la industria hasta las aplicaciones deportivas."
+      },
+      {
+        "title": "Gestión de producto",
+        "body": "Decidir qué construir, en qué orden y qué dejar fuera — y luego acompañarlo hasta la entrega en lugar de entregar una especificación."
+      },
+      {
+        "title": "Implementación",
+        "body": "Llevar un sistema desde la ingeniería de requisitos, pasando por las pruebas, hasta el traspaso a producción, y quedarse hasta que funcione. Formado por el trabajo en entornos regulados, donde nada entra en producción sin la evidencia que lo respalde."
+      },
+      {
+        "title": "Selección de software",
+        "body": "Comparar lo que ofrece el mercado con lo que usted necesita, para que compre lo adecuado — o descubra pronto que construirlo es la mejor respuesta."
+      },
+      {
+        "title": "Transformación digital",
+        "body": "Para empresas pequeñas que quieren avanzar más rápido: un archivo central en lugar de carpetas dispersas, contratos registrados de forma automática en vez de a mano e indicadores que simplemente están ahí — hasta rehacer flujos de ingresos completos."
+      },
+      {
+        "title": "Presencia web",
+        "body": "El sitio en s&iacute; y todo lo que lo mantiene en marcha. P&aacute;ginas est&aacute;ticas o WordPress &mdash; decidido seg&uacute;n qui&eacute;n lo mantenga despu&eacute;s y no seg&uacute;n qu&eacute; se construye antes &mdash; y con el mismo mensaje que todo lo dem&aacute;s que usted publica."
+      },
+      {
+        "title": "Campa&ntilde;as en redes sociales",
+        "body": "Estrategia, plan y producci&oacute;n para una ocasi&oacute;n concreta: una nueva sede, una ampliaci&oacute;n, una apertura. Planificado como una secuencia con tensi&oacute;n narrativa y no publicaci&oacute;n a publicaci&oacute;n.",
+        "link": "references/social-media-campaigns.html",
+        "link_label": "C&oacute;mo trabajamos"
+      }
     ],
     "consulting_note": "Los encargos se adaptan a cada caso — un proyecto definido, soporte continuo o un acuerdo a medida cuando eso convenga más a ambas partes."
   },
@@ -165,5 +232,84 @@
     "description": "Póngase en contacto con Axomis Labs — productos digitales, sistemas y consultoría pensados con cuidado.",
     "og_title": "Contacto — Axomis Labs",
     "og_description": "Hablemos del reto antes de hablar de la solución."
+  },
+  "references/social-media-campaigns": {
+    "title": "Campañas en redes sociales — Axomis Labs",
+    "description": "Estrategia, plan de campaña y producción para una ocasión concreta — planificado como una secuencia y construido como un sistema que usted puede seguir usando.",
+    "og_title": "Campañas en redes sociales — Axomis Labs",
+    "og_description": "Diagnóstico, posicionamiento, plan de publicación y producción — con un ejemplo real.",
+
+    "hero_eyebrow": "Consultor&iacute;a y servicios",
+    "hero_h1": "Campa&ntilde;as en redes sociales.",
+    "hero_lead": "Una campa&ntilde;a existe para conseguir algo: traer socios, clientes o reservas y marcar distancia con quien compite por la misma atenci&oacute;n. Empezamos por averiguar qu&eacute; tiene usted de verdad que los dem&aacute;s no puedan reclamar &mdash; y planificamos una secuencia que lo sostenga durante semanas en lugar de gastarlo en una sola publicaci&oacute;n.",
+
+    "method_eyebrow": "C&oacute;mo trabajamos",
+    "method_h2": "Cuatro pasos, en este orden.",
+    "method": [
+      {
+        "title": "Diagn&oacute;stico",
+        "body": "Qu&eacute; hay ya y qu&eacute; est&aacute; pasando realmente: su canal y su alcance, qui&eacute;n lo sigue, qu&eacute; hace la competencia y en qu&eacute; consiste la ocasi&oacute;n. Antes de esto no se produce nada."
+      },
+      {
+        "title": "Sus propias fortalezas",
+        "body": "Lo que usted tiene y los dem&aacute;s no pueden reclamar. Suele ser m&aacute;s concreto que un eslogan &mdash; una sala, un equipamiento, una oferta de clases, una ubicaci&oacute;n. De ah&iacute; sale la frase sobre la que se construye toda la campa&ntilde;a."
+      },
+      {
+        "title": "Plan de publicaci&oacute;n",
+        "body": "Un calendario fijo para las semanas alrededor de la ocasi&oacute;n: qu&eacute; se anuncia cu&aacute;ndo, d&oacute;nde van los avances y d&oacute;nde la revelaci&oacute;n. La tensi&oacute;n narrativa es lo importante &mdash; mantiene la atenci&oacute;n en el tiempo en lugar de gastarla de golpe."
+      },
+      {
+        "title": "Producci&oacute;n y entrega",
+        "body": "Todo lo que el plan prev&eacute;, construido desde un &uacute;nico sistema de dise&ntilde;o, m&aacute;s los archivos e instrucciones para continuar despu&eacute;s."
+      }
+    ],
+
+    "package_eyebrow": "El paquete",
+    "package_h2": "Qu&eacute; incluye el plan.",
+    "package_intro": "El diagn&oacute;stico termina en un plan. El plan nombra todo esto y el alcance se acuerda antes de producir nada.",
+    "package": [
+      {
+        "title": "Posicionamiento y mensaje",
+        "body": "La frase sobre la que se construye la campa&ntilde;a, y el razonamiento detr&aacute;s."
+      },
+      {
+        "title": "Plan editorial",
+        "body": "Feed, stories y reels repartidos a lo largo de las semanas, cada pieza con un briefing suficiente para que otra persona pudiera producirla."
+      },
+      {
+        "title": "Direcci&oacute;n de arte",
+        "body": "C&oacute;mo se ve y por qu&eacute; &mdash; decidido una vez, contra el mensaje, no publicaci&oacute;n a publicaci&oacute;n."
+      },
+      {
+        "title": "Sistema de dise&ntilde;o y plantillas",
+        "body": "Formato, color, tipograf&iacute;a, logotipo y m&aacute;rgenes fijados de forma central, para que la serie se lea como serie."
+      },
+      {
+        "title": "Producci&oacute;n y textos",
+        "body": "Las piezas, los textos que las acompa&ntilde;an, tratamiento de imagen y composici&oacute;n a partir del material existente."
+      },
+      {
+        "title": "Entrega y documentaci&oacute;n",
+        "body": "Archivos fuente e instrucciones en lenguaje sencillo, para que el sistema siga funcionando sin nosotros."
+      }
+    ],
+
+    "case_eyebrow": "En la pr&aacute;ctica",
+    "case_h2": "Chok Dee Bielefeld.",
+    "case_prose": [
+      "Una escuela de artes marciales de Bielefeld a&ntilde;ade una segunda sala: m&aacute;s de 850 m&sup2; en dos plantas, golpeo arriba y suelo abajo. Es una mejora real de lo que reciben los socios, y abre en noviembre.",
+      "Tampoco es la &uacute;nica noticia de la ciudad &mdash; un competidor tambi&eacute;n ha construido y lo est&aacute; publicando. As&iacute; que la tarea no era anunciar una apertura, sino hacer legible la diferencia, sostenerla durante cuatro semanas de publicaciones, stories y reels, y convertirla en clases de prueba y altas en lugar de un buen d&iacute;a de alcance.",
+      "Del diagn&oacute;stico sali&oacute; la frase sobre la que se construye la campa&ntilde;a: dos plantas, dos disciplinas, una escuela &mdash; algo que el competidor no puede reclamar. Todo lo dem&aacute;s se produjo contra esa frase: el plan de publicaci&oacute;n, el sistema de dise&ntilde;o, las plantillas y la p&aacute;gina de revisi&oacute;n de abajo. La campa&ntilde;a arranca con la apertura y la medici&oacute;n corre con ella desde el primer d&iacute;a."
+    ],
+    "case_note": "C&oacute;mo queda el trabajo terminado &mdash; la p&aacute;gina de revisi&oacute;n en la que aprueba el cliente:",
+    "case_link": "https://axomislabs.github.io/cdb-review-62ad09b6/",
+    "case_link_label": "Chok Dee Bielefeld, revisi&oacute;n de campa&ntilde;a",
+
+    "models_eyebrow": "Modelos",
+    "models_h2": "Lo llevamos nosotros o lo lleva usted.",
+    "models_prose": [
+      "Cuando el sistema existe, alguien tiene que manejarlo. Podemos ser nosotros &mdash; planificar, producir y publicar seg&uacute;n el calendario acordado &mdash; o su propio equipo, trabajando con las plantillas y el plan. La mayor&iacute;a de los encargos quedan en medio: nosotros llevamos la fase de lanzamiento y usted toma el relevo cuando ya est&aacute; en marcha.",
+      "En qu&eacute; sentido va se decide al escribir el plan, no antes. Todo lo dem&aacute;s lo aclaramos en una conversaci&oacute;n."
+    ]
   }
 }

@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://axomislabs.com/references/social-media-campaigns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://axomislabs.com/de/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -31,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://axomislabs.com/de/references/social-media-campaigns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://axomislabs.com/es/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -42,6 +52,11 @@
   </url>
   <url>
     <loc>https://axomislabs.com/es/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://axomislabs.com/es/references/social-media-campaigns.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

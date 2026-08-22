@@ -1,6 +1,8 @@
 {
   "lang": "de",
+
   "label": "Deutsch",
+
   "code": "DE",
 
   "ui": {
@@ -23,7 +25,8 @@
     "values": "Werte",
     "experience": "Erfahrung",
     "products": "Produkte",
-    "consulting": "Beratung"
+    "consulting": "Beratung & Leistungen",
+    "social_media_campaigns": "Social-Media-Kampagnen"
   },
 
   "contact": {
@@ -70,21 +73,48 @@
     "philosophy_eyebrow": "Unsere Philosophie",
     "philosophy_pull": "Die besten Lösungen beginnen selten mit Code.<br class=\"brk\">\n        <span class=\"pull-accent\">Sie beginnen mit Zuhören.</span>",
     "philosophy_steps": [
-      { "title": "Zuhören", "body": "Bevor wir etwas vorschlagen, verstehen wir das Problem so, wie die Menschen es erleben, die damit leben." },
-      { "title": "Verstehen", "body": "Wir erfassen das System rund um das Problem — technisch, organisatorisch und menschlich." },
-      { "title": "Bessere Fragen stellen", "body": "Erst dann wählen wir die Technologien, Architekturen und Werkzeuge, die es wirklich lösen." }
+      {
+        "title": "Zuhören",
+        "body": "Bevor wir etwas vorschlagen, verstehen wir das Problem so, wie die Menschen es erleben, die damit leben."
+      },
+      {
+        "title": "Verstehen",
+        "body": "Wir erfassen das System rund um das Problem — technisch, organisatorisch und menschlich."
+      },
+      {
+        "title": "Bessere Fragen stellen",
+        "body": "Erst dann wählen wir die Technologien, Architekturen und Werkzeuge, die es wirklich lösen."
+      }
     ],
     "philosophy_closing": "Statt Trends zu folgen, verfolgen wir Lösungen, die noch lange wertvoll bleiben, nachdem sich die neueste Technologie verändert hat. Die Branchen mögen wechseln. Die Technologien werden sich weiterentwickeln. Unsere Prinzipien bleiben.",
 
     "values_eyebrow": "Unsere Werte",
     "values_h2": "Woran wir festhalten.",
     "values": [
-      { "title": "Bedachtsamkeit", "body": "Jede Entscheidung verdient Überlegung. Gute Technologie beginnt damit, Menschen zu verstehen." },
-      { "title": "Klarheit", "body": "Wir reduzieren Komplexität. Wir schaffen Systeme, denen Menschen vertrauen und die sie verstehen können." },
-      { "title": "Handwerk", "body": "Qualität geht uns vor Tempo. Details zählen, weil Details Erlebnisse prägen." },
-      { "title": "Neugier", "body": "Wir lernen weiter. Innovation beginnt damit, bessere Fragen zu stellen." },
-      { "title": "Integrität", "body": "Wir handeln transparent und verantwortungsvoll. Vertrauen entsteht durch Verlässlichkeit." },
-      { "title": "Menschliches Erleben", "body": "Technologie soll Menschen unterstützen, nicht überfordern. Jede Interaktion kann das Leben einfacher machen." }
+      {
+        "title": "Bedachtsamkeit",
+        "body": "Jede Entscheidung verdient Überlegung. Gute Technologie beginnt damit, Menschen zu verstehen."
+      },
+      {
+        "title": "Klarheit",
+        "body": "Wir reduzieren Komplexität. Wir schaffen Systeme, denen Menschen vertrauen und die sie verstehen können."
+      },
+      {
+        "title": "Handwerk",
+        "body": "Qualität geht uns vor Tempo. Details zählen, weil Details Erlebnisse prägen."
+      },
+      {
+        "title": "Neugier",
+        "body": "Wir lernen weiter. Innovation beginnt damit, bessere Fragen zu stellen."
+      },
+      {
+        "title": "Integrität",
+        "body": "Wir handeln transparent und verantwortungsvoll. Vertrauen entsteht durch Verlässlichkeit."
+      },
+      {
+        "title": "Menschliches Erleben",
+        "body": "Technologie soll Menschen unterstützen, nicht überfordern. Jede Interaktion kann das Leben einfacher machen."
+      }
     ]
   },
 
@@ -102,9 +132,18 @@
       "Weniger offensichtlich: <strong>fünfundzwanzig Jahre Sport</strong> in sehr unterschiedlichen Disziplinen — Kampfsport, Ballsport, Volleyball, Tanz, Tauchen. Was in die Arbeit einfließt, ist nicht der Sport, sondern die Haltung dahinter: Fokus, Disziplin und das Wissen, was es braucht, um in etwas Unvertrautem wirklich gut zu werden. Genau deshalb ist die Branche auch nicht der Punkt — übertragbar ist die Disziplin, nicht die Domäne."
     ],
     "experience_tiles": [
-      { "title": "Regulierte Systeme", "body": "Über zehn Jahre Architektur, Implementierung und Projektleitung in der Pharmabranche, wo Korrektheit Anforderung ist und nicht Anspruch." },
-      { "title": "Validierung &amp; Compliance", "body": "Computersystemvalidierung — Systeme bauen, die reibungslos laufen und sich zugleich gegenüber den geltenden Regeln nachweisen lassen." },
-      { "title": "Fokus &amp; Disziplin", "body": "Fünfundzwanzig Jahre Sport in völlig verschiedenen Disziplinen. Übertragbar ist der Fokus und die Disziplin, an einer Sache zu bleiben, bis sie wirklich gut ist." }
+      {
+        "title": "Regulierte Systeme",
+        "body": "Über zehn Jahre Architektur, Implementierung und Projektleitung in der Pharmabranche, wo Korrektheit Anforderung ist und nicht Anspruch."
+      },
+      {
+        "title": "Validierung &amp; Compliance",
+        "body": "Computersystemvalidierung — Systeme bauen, die reibungslos laufen und sich zugleich gegenüber den geltenden Regeln nachweisen lassen."
+      },
+      {
+        "title": "Fokus &amp; Disziplin",
+        "body": "Fünfundzwanzig Jahre Sport in völlig verschiedenen Disziplinen. Übertragbar ist der Fokus und die Disziplin, an einer Sache zu bleiben, bis sie wirklich gut ist."
+      }
     ],
     "experience_note": "Der Ansatz ist nicht an eine Branche gebunden. Er trägt überall dort, wo Systeme zum Laufen gebracht werden und einer Prüfung standhalten müssen — pharmazeutische und andere regulierte Umgebungen eingeschlossen.",
 
@@ -146,16 +185,44 @@
       }
     ],
 
-    "consulting_eyebrow": "Beratung",
+    "consulting_eyebrow": "Beratung & Leistungen",
     "consulting_h2": "Arbeit, die vor der Software beginnt.",
-    "consulting_intro": "Von einer einzelnen Anwendung bis zum unternehmensweiten Digitalisierungsschritt — zugeschnitten auf das, was das Unternehmen als Nächstes wirklich braucht.",
+    "consulting_intro": "Von einer einzelnen Anwendung bis zur Digitalisierung eines ganzen Betriebs — und dem Online-Auftritt, der dazugehört. Zugeschnitten auf das, was als Nächstes wirklich ansteht.",
     "consulting_tiles": [
-      { "title": "Projekt- &amp; Organisationsmanagement", "body": "Arbeit so strukturieren, dass sie geplant, delegiert und abgeschlossen werden kann — mit Entscheidungen, die vorbereitet, dokumentiert und später nachvollziehbar sind." },
-      { "title": "Daten- &amp; Prozessmanagement", "body": "Daten an einen verlässlichen Ort bringen und die Prozesse darum herum in eine Form, die trägt — von industriellen Abläufen bis zu Anwendungen im Sport." },
-      { "title": "Produktmanagement", "body": "Entscheiden, was gebaut wird, in welcher Reihenfolge und was bewusst wegbleibt — und dann bis zur Auslieferung dabeibleiben, statt eine Spezifikation zu übergeben." },
-      { "title": "Implementierung", "body": "Ein System vom Requirements Engineering über den Test bis zur Produktivübergabe führen und dabeibleiben, bis es läuft. Geprägt von regulierter Arbeit, in der nichts ohne belastbaren Nachweis in Betrieb geht." },
-      { "title": "Softwareauswahl", "body": "Das Marktangebot gegen den tatsächlichen Bedarf halten, damit Sie das Richtige kaufen — oder früh erkennen, dass Eigenentwicklung die bessere Antwort ist." },
-      { "title": "Digitale Transformation", "body": "Für kleinere Unternehmen, die schneller werden wollen: beginnend bei einer einzelnen Anwendung bis hin zur Neugestaltung von Erlösströmen durch Digitalisierung und Optimierung." }
+      {
+        "title": "Projekt- &amp; Organisationsmanagement",
+        "body": "Arbeit so strukturieren, dass sie geplant, delegiert und abgeschlossen werden kann — mit Entscheidungen, die vorbereitet, dokumentiert und später nachvollziehbar sind."
+      },
+      {
+        "title": "Daten- &amp; Prozessmanagement",
+        "body": "Daten an einen verlässlichen Ort bringen und die Prozesse drumherum in eine Form, die trägt — Vertragserfassung, Dokumentenablage, Zahlungen und Terminplanung eingeschlossen, von der Industrie bis zur Sportanwendung."
+      },
+      {
+        "title": "Produktmanagement",
+        "body": "Entscheiden, was gebaut wird, in welcher Reihenfolge und was bewusst wegbleibt — und dann bis zur Auslieferung dabeibleiben, statt eine Spezifikation zu übergeben."
+      },
+      {
+        "title": "Implementierung",
+        "body": "Ein System vom Requirements Engineering über den Test bis zur Produktivübergabe führen und dabeibleiben, bis es läuft. Geprägt von regulierter Arbeit, in der nichts ohne belastbaren Nachweis in Betrieb geht."
+      },
+      {
+        "title": "Softwareauswahl",
+        "body": "Das Marktangebot gegen den tatsächlichen Bedarf halten, damit Sie das Richtige kaufen — oder früh erkennen, dass Eigenentwicklung die bessere Antwort ist."
+      },
+      {
+        "title": "Digitale Transformation",
+        "body": "Für kleinere Unternehmen, die schneller werden wollen: ein zentrales Archiv statt verstreuter Ordner, Verträge automatisch erfasst statt von Hand, Kennzahlen, die einfach da sind — bis hin zur Überarbeitung ganzer Erlösströme."
+      },
+      {
+        "title": "Webauftritt",
+        "body": "Die Website selbst und alles, was sie am Laufen h&auml;lt. Statische Seiten oder WordPress &mdash; entschieden danach, wer sie sp&auml;ter pflegt, nicht danach, was schneller gebaut ist &mdash; und mit derselben Aussage wie alles andere, was Sie ver&ouml;ffentlichen."
+      },
+      {
+        "title": "Social-Media-Kampagnen",
+        "body": "Strategie, Plan und Produktion f&uuml;r einen konkreten Anlass: ein neuer Standort, eine Erweiterung, eine Er&ouml;ffnung. Als Abfolge mit Spannungsbogen geplant statt Beitrag f&uuml;r Beitrag.",
+        "link": "references/social-media-campaigns.html",
+        "link_label": "Wie wir arbeiten"
+      }
     ],
     "consulting_note": "Mandate werden passend zugeschnitten — ein definiertes Projekt, laufende Unterstützung oder eine individuelle Vereinbarung, wenn das für beide Seiten besser passt."
   },
@@ -165,5 +232,84 @@
     "description": "Nehmen Sie Kontakt mit Axomis Labs auf — durchdachte digitale Produkte, Systeme und Beratung.",
     "og_title": "Kontakt — Axomis Labs",
     "og_description": "Sprechen wir über die Aufgabe, bevor wir über die Lösung sprechen."
+  },
+  "references/social-media-campaigns": {
+    "title": "Social-Media-Kampagnen — Axomis Labs",
+    "description": "Strategie, Kampagnenplan und Produktion f&uuml;r einen konkreten Anlass — als Abfolge mit Spannungsbogen geplant und als System gebaut, das Sie weiterf&uuml;hren k&ouml;nnen.",
+    "og_title": "Social-Media-Kampagnen — Axomis Labs",
+    "og_description": "Assessment, Positionierung, Releaseplan und Produktion — mit einem echten Beispiel.",
+
+    "hero_eyebrow": "Beratung &amp; Leistungen",
+    "hero_h1": "Social-Media-Kampagnen.",
+    "hero_lead": "Eine Kampagne hat einen Zweck: Mitglieder, Kunden oder Buchungen bringen &mdash; und Abstand zu allen anderen schaffen, die um dieselbe Aufmerksamkeit konkurrieren. Wir fangen damit an herauszuarbeiten, was Sie wirklich haben und die anderen nicht behaupten k&ouml;nnen. Daraus wird eine Abfolge, die das &uuml;ber Wochen tr&auml;gt, statt es in einem Beitrag zu verschie&szlig;en.",
+
+    "method_eyebrow": "Wie wir arbeiten",
+    "method_h2": "Vier Schritte, in dieser Reihenfolge.",
+    "method": [
+      {
+        "title": "Assessment",
+        "body": "Was schon da ist und was tats&auml;chlich passiert: Ihr Kanal und seine Reichweite, wer folgt, was der Wettbewerb macht und worin der Anlass besteht. Vorher wird nichts produziert."
+      },
+      {
+        "title": "Die eigenen St&auml;rken",
+        "body": "Was Sie haben und die anderen nicht behaupten k&ouml;nnen. Das ist meist konkreter als ein Slogan &mdash; ein Raum, eine Ausstattung, ein Kursangebot, eine Lage. Daraus wird der Satz, auf dem die ganze Kampagne steht."
+      },
+      {
+        "title": "Releaseplan",
+        "body": "Ein fester Fahrplan &uuml;ber die Wochen rund um den Anlass: Was wird wann angek&uuml;ndigt, wo sitzen die Teaser, wo sitzt die Aufl&ouml;sung. Der Spannungsbogen ist der Punkt &mdash; er h&auml;lt die Aufmerksamkeit &uuml;ber die Zeit, statt sie auf einmal auszugeben, und gibt den Followern einen Grund dranzubleiben."
+      },
+      {
+        "title": "Produktion und &Uuml;bergabe",
+        "body": "Alles, was der Plan vorsieht, gebaut aus einem Design-System &mdash; dazu die Dateien und Anleitungen, um danach selbst weiterzumachen."
+      }
+    ],
+
+    "package_eyebrow": "Das Paket",
+    "package_h2": "Was im Plan steht.",
+    "package_intro": "Das Assessment m&uuml;ndet in einen Plan. Der Plan benennt all das, und der Umfang steht fest, bevor irgendetwas produziert wird.",
+    "package": [
+      {
+        "title": "Positionierung und Botschaft",
+        "body": "Der eine Satz, auf dem die Kampagne steht &mdash; und die Begr&uuml;ndung dazu."
+      },
+      {
+        "title": "Redaktionsplan",
+        "body": "Feed, Stories und Reels &uuml;ber die Wochen verteilt, jeder Beitrag so gebrieft, dass ihn auch jemand anderes produzieren k&ouml;nnte."
+      },
+      {
+        "title": "Art Direction",
+        "body": "Wie es aussieht und warum &mdash; einmal entschieden, gegen die Botschaft, nicht pro Beitrag."
+      },
+      {
+        "title": "Design-System und Vorlagen",
+        "body": "Format, Farbe, Schrift, Logo und R&auml;nder zentral festgelegt, damit die Serie als Serie liest und neue Beitr&auml;ge stimmig bleiben."
+      },
+      {
+        "title": "Produktion und Texte",
+        "body": "Die Motive selbst, die Texte dazu, Bildbearbeitung und Montage aus dem vorhandenen Material."
+      },
+      {
+        "title": "&Uuml;bergabe und Dokumentation",
+        "body": "Quelldateien und Anleitungen in einfacher Sprache, damit das System auch ohne uns weiterl&auml;uft."
+      }
+    ],
+
+    "case_eyebrow": "In der Praxis",
+    "case_h2": "Chok Dee Bielefeld.",
+    "case_prose": [
+      "Eine Kampfsportschule in Bielefeld bekommt eine zweite Halle: &uuml;ber 850 m&sup2; auf zwei Ebenen, oben Striking, unten Bodenarbeit. Das ist eine echte Verbesserung dessen, was Mitglieder bekommen, und es &ouml;ffnet im November.",
+      "Es ist zugleich nicht die einzige Nachricht in der Stadt &mdash; ein Wettbewerber hat ebenfalls gebaut und berichtet dar&uuml;ber. Die Aufgabe war also nicht, eine Er&ouml;ffnung anzuk&uuml;ndigen. Sie war, den Unterschied lesbar zu machen, ihn &uuml;ber vier Wochen aus Beitr&auml;gen, Stories und Reels zu tragen und daraus Probetrainings und Anmeldungen werden zu lassen statt eines guten Reichweitentages.",
+      "Aus dem Assessment kam der Satz, auf dem die Kampagne steht: zwei Ebenen, zwei Disziplinen, eine Schule &mdash; etwas, das der Wettbewerber nicht behaupten kann. Alles danach wurde gegen diesen Satz produziert: der Releaseplan, das Design-System, die Vorlagen und die Review-Seite unten. Die Kampagne l&auml;uft ab der Er&ouml;ffnung, die Messung vom ersten Tag an mit."
+    ],
+    "case_note": "Wie die fertige Arbeit aussieht &mdash; die Review-Seite, auf der der Kunde freigibt:",
+    "case_link": "https://axomislabs.github.io/cdb-review-62ad09b6/",
+    "case_link_label": "Chok Dee Bielefeld, Kampagnen-Review",
+
+    "models_eyebrow": "Modelle",
+    "models_h2": "Von uns gef&uuml;hrt oder von Ihnen.",
+    "models_prose": [
+      "Wenn das System steht, muss es jemand betreiben. Das k&ouml;nnen wir sein &mdash; planen, produzieren und nach Fahrplan ver&ouml;ffentlichen &mdash; oder Ihr eigenes Team, das mit den Vorlagen und dem Plan arbeitet. Die meisten Mandate liegen dazwischen: Wir tragen die Launchphase, Sie &uuml;bernehmen, sobald es l&auml;uft.",
+      "Wie herum es l&auml;uft, wird beim Schreiben des Plans entschieden, nicht vorher. Alles Weitere kl&auml;ren wir im Gespr&auml;ch."
+    ]
   }
 }
