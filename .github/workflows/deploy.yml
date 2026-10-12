@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - "maintenance/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
@@ -29,10 +30,12 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      # TEMPORARY: the site is offline and ./maintenance is published instead.
+      # To bring the site back, change this path to ./site.
       # Only ./site is published — Branding/ stays in the repo but off the web.
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./site
+          path: ./maintenance
 
       - id: deployment
         uses: actions/deploy-pages@v4
